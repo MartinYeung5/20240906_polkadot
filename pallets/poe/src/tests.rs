@@ -3,6 +3,7 @@ use crate::{mock::*, Error};
 use frame_support::{assert_noop, assert_ok, BoundedVec};
 use frame_support::pallet_prelude::Get;
 
+// 1: 創建存證 - 成功
 #[test]
 fn create_claim_works() {
     //
@@ -18,6 +19,7 @@ fn create_claim_works() {
 	})
 }
 
+// 1: 創建存證 - 失敗 (已創建同一數據)
 #[test]
 fn create_claim_failed_when_claim_already_exist() {
 	new_test_ext().execute_with(|| {
@@ -31,6 +33,7 @@ fn create_claim_failed_when_claim_already_exist() {
 	})
 }
 
+// 2: 撤銷存證 - 成功
 #[test]
 fn revoke_claim_works() {
 	new_test_ext().execute_with(|| {
@@ -41,6 +44,7 @@ fn revoke_claim_works() {
 	})
 }
 
+// 2: 撤銷存證 - 失敗 (存證不存在)
 #[test]
 fn revoke_claim_failed_when_claim_is_not_exist() {
 	new_test_ext().execute_with(|| {
@@ -53,6 +57,7 @@ fn revoke_claim_failed_when_claim_is_not_exist() {
 	})
 }
 
+// 2: 撤銷存證 - 失敗 (不是存證擁有人)
 #[test]
 fn revoke_claim_failed_with_wrong_owner() {
 	new_test_ext().execute_with(|| {
@@ -66,6 +71,7 @@ fn revoke_claim_failed_with_wrong_owner() {
 	})
 }
 
+// 3. 轉移存證 - 成功
 #[test]
 fn transfer_claim_works() {
 	new_test_ext().execute_with(|| {
@@ -83,6 +89,7 @@ fn transfer_claim_works() {
 	})
 }
 
+// 3. 轉移存證 - 失敗 (存證不存在)
 #[test]
 fn transfer_claim_failed_when_claim_is_not_exist() {
 	new_test_ext().execute_with(|| {
@@ -95,6 +102,7 @@ fn transfer_claim_failed_when_claim_is_not_exist() {
 	})
 }
 
+// 3. 轉移存證 - 失敗 (不是存證擁有人)
 #[test]
 fn transfer_claim_failed_with_wrong_owner() {
 	new_test_ext().execute_with(|| {
