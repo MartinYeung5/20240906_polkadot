@@ -3,7 +3,7 @@ use frame_support::{
     derive_impl,
     traits::{ConstU16, ConstU64},
 };
-use sp_core::{ConstU32, H256};
+use sp_core::{H256};
 use sp_runtime::{
     traits::{BlakeTwo256, IdentityLookup},
     BuildStorage,

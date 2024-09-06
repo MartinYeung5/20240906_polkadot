@@ -1,8 +1,6 @@
 use super::*;
 use crate::{mock::*, Error, Proofs};
 use frame_support::{assert_noop, assert_ok, BoundedVec};
-use sp_core::ConstU32;
-//use sp_runtime::BoundedVec;
 
 #[test]
 fn create_claim_works() {
