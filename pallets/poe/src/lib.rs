@@ -1,41 +1,3 @@
-//! # Template Pallet
-//!
-//! A pallet with minimal functionality to help developers understand the essential components of
-//! writing a FRAME pallet. It is typically used in beginner tutorials or in Substrate template
-//! nodes as a starting point for creating a new pallet and **not meant to be used in production**.
-//!
-//! ## Overview
-//!
-//! This template pallet contains basic examples of:
-//! - declaring a storage item that stores a single `u32` value
-//! - declaring and using events
-//! - declaring and using errors
-//! - a dispatchable function that allows a user to set a new value to storage and emits an event
-//!   upon success
-//! - another dispatchable function that causes a custom error to be thrown
-//!
-//! Each pallet section is annotated with an attribute using the `#[pallet::...]` procedural macro.
-//! This macro generates the necessary code for a pallet to be aggregated into a FRAME runtime.
-//!
-//! Learn more about FRAME macros [here](https://docs.substrate.io/reference/frame-macros/).
-//!
-//! ### Pallet Sections
-//!
-//! The pallet sections in this template are:
-//!
-//! - A **configuration trait** that defines the types and parameters which the pallet depends on
-//!   (denoted by the `#[pallet::config]` attribute). See: [`Config`].
-//! - A **means to store pallet-specific data** (denoted by the `#[pallet::storage]` attribute).
-//!   See: [`storage_types`].
-//! - A **declaration of the events** this pallet emits (denoted by the `#[pallet::event]`
-//!   attribute). See: [`Event`].
-//! - A **declaration of the errors** that this pallet can throw (denoted by the `#[pallet::error]`
-//!   attribute). See: [`Error`].
-//! - A **set of dispatchable functions** that define the pallet's functionality (denoted by the
-//!   `#[pallet::call]` attribute). See: [`dispatchables`].
-//!
-//! Run `cargo doc --package pallet-template --open` to view this pallet's documentation.
-
 // We make sure this pallet uses `no_std` for compiling to Wasm.
 #![cfg_attr(not(feature = "std"), no_std)]
 
@@ -65,8 +27,8 @@ pub use weights::*;
 pub mod pallet {
     // Import various useful types required by all FRAME pallets.
     use super::*;
-    use frame_support::pallet_prelude::*;
-    use frame_system::pallet_prelude::*;
+    use frame_support::{ensure, pallet_prelude::*};
+    use frame_system::{ensure_signed, pallet_prelude::*};
 
     // The `Pallet` struct serves as a placeholder to implement traits, methods and dispatchables
     // (`Call`s) in this pallet.
@@ -82,8 +44,8 @@ pub mod pallet {
     pub trait Config: frame_system::Config {
         /// The overarching runtime event type.
         type RuntimeEvent: From<Event<Self>> + IsType<<Self as frame_system::Config>::RuntimeEvent>;
-        /// A type representing the weights required by the dispatchables of this pallet.
-        type WeightInfo: WeightInfo;
+        #[pallet::constant]
+        type MaxClaimLength: Get<u32>;
     }
 
     /// A storage item for this pallet.
@@ -91,7 +53,13 @@ pub mod pallet {
     /// In this template, we are declaring a storage item called `Something` that stores a single
     /// `u32` value. Learn more about runtime storage here: <https://docs.substrate.io/build/runtime-storage/>
     #[pallet::storage]
-    pub type Something<T> = StorageValue<_, u32>;
+    #[pallet::getter(fn proofs)]
+    pub type Proofs<T: Config> = StorageMap<
+        _,
+        Blake2_128Concat,
+        BoundedVec<u8, T::MaxClaimLength>,
+        (T::AccountId, BlockNumberFor<T>)
+    >;
 
     /// Events that functions in this pallet can emit.
     ///
@@ -107,12 +75,9 @@ pub mod pallet {
     #[pallet::generate_deposit(pub(super) fn deposit_event)]
     pub enum Event<T: Config> {
         /// A user has successfully set a new value.
-        SomethingStored {
-            /// The new value set.
-            something: u32,
-            /// The account who set the new value.
-            who: T::AccountId,
-        },
+        ClaimCreated(T::AccountId, BoundedVec<u8, T::MaxClaimLength>),
+        ClaimRevoked(T::AccountId, BoundedVec<u8, T::MaxClaimLength>),
+        ClaimTransfered(T::AccountId, T::AccountId, BoundedVec<u8, T::MaxClaimLength>),
     }
 
     /// Errors that can be returned by this pallet.
@@ -125,10 +90,10 @@ pub mod pallet {
     /// information.
     #[pallet::error]
     pub enum Error<T> {
-        /// The value retrieved was `None` as no value was previously set.
-        NoneValue,
-        /// There was an attempt to increment the value in storage over `u32::MAX`.
-        StorageOverflow,
+        ProofAlreadyExist,
+        ClaimLengthTooLarge,
+        ClaimNotExist,
+        NotClaimOwner,
     }
 
     /// The pallet's dispatchable functions ([`Call`]s).
@@ -143,6 +108,9 @@ pub mod pallet {
     /// will also change which will break backwards compatibility.
     ///
     /// The [`weight`] macro is used to assign a weight to each call.
+    #[pallet::hooks]
+    impl<T: Config> Hooks<BlockNumberFor<T>> for Pallet<T> {}  
+    
     #[pallet::call]
     impl<T: Config> Pallet<T> {
         /// An example dispatchable that takes a single u32 value as a parameter, writes the value
@@ -151,52 +119,66 @@ pub mod pallet {
         /// It checks that the _origin_ for this call is _Signed_ and returns a dispatch
         /// error if it isn't. Learn more about origins here: <https://docs.substrate.io/build/origins/>
         #[pallet::call_index(0)]
-        #[pallet::weight(T::WeightInfo::do_something())]
-        pub fn do_something(origin: OriginFor<T>, something: u32) -> DispatchResult {
-            // Check that the extrinsic was signed and get the signer.
-            let who = ensure_signed(origin)?;
+        #[pallet::weight({0})]
+        pub fn create_claim(
+            origin: OriginFor<T>,
+            claim: BoundedVec<u8, T::MaxClaimLength>
+        ) -> DispatchResult {
+            let sender = ensure_signed(origin)?;
 
-            // Update storage.
-            Something::<T>::put(something);
+            ensure!(claim.len() <= T::MaxClaimLength::get() as usize, Error::<T>::ClaimLengthTooLarge);
+            ensure!(!Proofs::<T>::contains_key(&claim), Error::<T>::ProofAlreadyExist);
 
-            // Emit an event.
-            Self::deposit_event(Event::SomethingStored { something, who });
+            Proofs::<T>::insert(
+                &claim,
+                (sender.clone(), frame_system::Pallet::<T>::block_number())
+            );
 
-            // Return a successful `DispatchResult`
-            Ok(())
+            Self::deposit_event(Event::ClaimCreated(sender, claim));
+
+            Ok(().into())
         }
 
-        /// An example dispatchable that may throw a custom error.
-        ///
-        /// It checks that the caller is a signed origin and reads the current value from the
-        /// `Something` storage item. If a current value exists, it is incremented by 1 and then
-        /// written back to storage.
-        ///
-        /// ## Errors
-        ///
-        /// The function will return an error under the following conditions:
-        ///
-        /// - If no value has been set ([`Error::NoneValue`])
-        /// - If incrementing the value in storage causes an arithmetic overflow
-        ///   ([`Error::StorageOverflow`])
         #[pallet::call_index(1)]
-        #[pallet::weight(T::WeightInfo::cause_error())]
-        pub fn cause_error(origin: OriginFor<T>) -> DispatchResult {
-            let _who = ensure_signed(origin)?;
+        #[pallet::weight({0})]
+        pub fn revoke_claim(
+            origin: OriginFor<T>,
+            claim: BoundedVec<u8, T::MaxClaimLength>
+        ) -> DispatchResult {
+            let sender = ensure_signed(origin)?;
 
-            // Read a value from storage.
-            match Something::<T>::get() {
-                // Return an error if the value has not been set.
-                None => Err(Error::<T>::NoneValue.into()),
-                Some(old) => {
-                    // Increment the value read from storage. This will cause an error in the event
-                    // of overflow.
-                    let new = old.checked_add(1).ok_or(Error::<T>::StorageOverflow)?;
-                    // Update the value in storage with the incremented result.
-                    Something::<T>::put(new);
-                    Ok(())
-                }
-            }
+            let (owner, _) = Proofs::<T>::get(&claim).ok_or(Error::<T>::ClaimNotExist)?;
+
+            ensure!(owner == sender, Error::<T>::NotClaimOwner);
+
+            Proofs::<T>::remove(&claim);
+
+            Self::deposit_event(Event::ClaimRevoked(sender, claim));
+
+            Ok(().into())
+        }
+
+        #[pallet::call_index(2)]
+        #[pallet::weight({0})]
+        pub fn transfer_claim(
+            origin: OriginFor<T>,
+            claim: BoundedVec<u8, T::MaxClaimLength>,
+            target: T::AccountId,
+        ) -> DispatchResult {
+            let sender = ensure_signed(origin)?;
+
+            let (owner, _) = Proofs::<T>::get(&claim).ok_or(Error::<T>::ClaimNotExist)?;
+
+            ensure!(owner == sender, Error::<T>::NotClaimOwner);
+
+            Proofs::<T>::insert(
+                &claim,
+                (target.clone(), frame_system::Pallet::<T>::block_number())
+            );
+
+            Self::deposit_event(Event::ClaimTransfered(sender, target, claim));
+
+            Ok(().into())
         }
     }
 }

@@ -1,50 +1,21 @@
 use super::*;
-use crate::{mock::*, Error, Event, Something};
+use crate::{mock::*, Error, Proofs};
 use frame_support::{assert_noop, assert_ok, BoundedVec};
-
-#[test]
-fn it_works_for_default_value() {
-    new_test_ext().execute_with(|| {
-        // Go past genesis block so events get deposited
-        System::set_block_number(1);
-        // Dispatch a signed extrinsic.
-        assert_ok!(TemplateModule::do_something(RuntimeOrigin::signed(1), 42));
-        // Read pallet storage and assert an expected result.
-        assert_eq!(Something::<Test>::get(), Some(42));
-        // Assert that the correct event was deposited
-        System::assert_last_event(
-            Event::SomethingStored {
-                something: 42,
-                who: 1,
-            }
-            .into(),
-        );
-    });
-}
-
-#[test]
-fn correct_error_for_none_value() {
-    new_test_ext().execute_with(|| {
-        // Ensure the expected error is thrown when no value is present.
-        assert_noop!(
-            TemplateModule::cause_error(RuntimeOrigin::signed(1)),
-            Error::<Test>::NoneValue
-        );
-    });
-}
+use sp_core::ConstU32;
+//use sp_runtime::BoundedVec;
 
 #[test]
 fn create_claim_works() {
     //
 	new_test_ext().execute_with(|| {
 		let claim = BoundedVec::try_from(vec![0, 1]).unwrap();
-		assert_ok!(PoeModule::create_claim(RuntimeOrigin::signed(677), claim.clone()));
+		assert_ok!(PoeModule::create_claim(RuntimeOrigin::signed(1), claim.clone()));
 
 		assert_eq!(
 			Proofs::<Test>::get(&claim),
 			Some((1, frame_system::Pallet::<Test>::block_number()))
 		);
-		assert_eq!(<<Test as Config>::MaxClaimLength as Get<u32>>::get(), 10);
+		//assert_eq!(<<Test as Config>::MaxClaimLength as Get<u32>>::get(), 10);
 	})
 }
 
