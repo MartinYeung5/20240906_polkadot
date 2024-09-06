@@ -1,5 +1,6 @@
+use super::*;
 use crate::{mock::*, Error, Event, Something};
-use frame_support::{assert_noop, assert_ok, BoundedVec, pallet_prelude::Get};
+use frame_support::{assert_noop, assert_ok, BoundedVec};
 
 #[test]
 fn it_works_for_default_value() {
