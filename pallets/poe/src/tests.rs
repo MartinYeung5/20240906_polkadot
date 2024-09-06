@@ -1,6 +1,7 @@
 use super::*;
-use crate::{mock::*, Error, Proofs};
+use crate::{mock::*, Error};
 use frame_support::{assert_noop, assert_ok, BoundedVec};
+use frame_support::pallet_prelude::Get;
 
 #[test]
 fn create_claim_works() {
@@ -13,7 +14,7 @@ fn create_claim_works() {
 			Proofs::<Test>::get(&claim),
 			Some((1, frame_system::Pallet::<Test>::block_number()))
 		);
-		//assert_eq!(<<Test as Config>::MaxClaimLength as Get<u32>>::get(), 10);
+		assert_eq!(<<Test as Config>::MaxClaimLength as Get<u32>>::get(), 10);
 	})
 }
 
