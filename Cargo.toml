@@ -12,7 +12,6 @@ members = [
 	"node",
 	'pallets/poe',
 	"runtime",
-
 ]
 
 [workspace.lints.rust]
