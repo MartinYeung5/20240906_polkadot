@@ -13,7 +13,8 @@ https://youtu.be/yZ-LPBslotc
 --extrinc "*" \
 --steps 20 \
 --repeat 10 \
---output pallets/poe/src/weights.rs
+--output pallets/poe/src/weights.rs \
+--template .maintain/frame-weight-template.hbs
 
 ## github
 https://github.com/MartinYeung5/20240906_polkadot
