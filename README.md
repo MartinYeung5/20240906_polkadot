@@ -4,6 +4,11 @@
 
 # 20240909
 https://youtu.be/yZ-LPBslotc
+
+update:
+* update runtime/src/lib.rs
+row:345: [pallet_poe, PoeModule]
+
 * cargo build --profile=production --features runtime-benchmarks
 * ./target/production/solochain-template-node benchmark pallet \
 --chain dev \
