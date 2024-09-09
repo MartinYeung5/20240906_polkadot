@@ -8,6 +8,7 @@ https://youtu.be/yZ-LPBslotc
 * ./target/production/solochain-template-node benchmark pallet \
 --chain dev \
 --execution=wasm \
+--wasm-execution=compiled \
 
 ## github
 https://github.com/MartinYeung5/20240906_polkadot
