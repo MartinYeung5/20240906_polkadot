@@ -9,7 +9,7 @@ https://youtu.be/yZ-LPBslotc
 --chain dev \
 --execution=wasm \
 --wasm-execution=compiled \
---pallet pallte_poe \
+--pallet pallet_poe \
 
 ## github
 https://github.com/MartinYeung5/20240906_polkadot
