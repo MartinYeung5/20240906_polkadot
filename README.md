@@ -7,7 +7,7 @@ https://youtu.be/yZ-LPBslotc
 * cargo build --profile=production --features runtime-benchmarks
 * ./target/production/solochain-template-node benchmark pallet \
 --chain dev \
-
+--execution=wasm \
 
 ## github
 https://github.com/MartinYeung5/20240906_polkadot
