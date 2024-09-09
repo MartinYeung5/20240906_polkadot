@@ -6,6 +6,7 @@
 https://youtu.be/yZ-LPBslotc
 * cargo build --profile=production --features runtime-benchmarks
 * ./target/production/solochain-template-node benchmark pallet \
+--chain dev \
 
 
 ## github
