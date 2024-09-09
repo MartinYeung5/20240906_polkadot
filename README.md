@@ -11,6 +11,7 @@ https://youtu.be/yZ-LPBslotc
 --wasm-execution=compiled \
 --pallet pallet_poe \
 --extrinc "*" \
+--steps 20 \
 
 ## github
 https://github.com/MartinYeung5/20240906_polkadot
