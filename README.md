@@ -4,7 +4,7 @@
 
 # 20240909
 https://youtu.be/yZ-LPBslotc
-* cargo
+* cargo build --profile=production --features runtime-benchmarks
 
 ## github
 https://github.com/MartinYeung5/20240906_polkadot
