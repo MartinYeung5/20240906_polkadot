@@ -11,7 +11,7 @@ use frame_support::{BoundedVec, pallet_prelude::Get};
 use sp_std::vec;
 
 #[benchmarks]
-mod benchmarks {
+mod benches {
     use super::*;
 
     #[benchmark]
