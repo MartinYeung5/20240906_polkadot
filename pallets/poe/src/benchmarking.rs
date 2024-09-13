@@ -21,7 +21,7 @@ mod benches {
     }
 
     #[extrinsic_call]
-    create_clone(RawOrigin::Signed(caller.clone()), claim.clone());
+    create_claim(RawOrigin::Signed(caller.clone()), claim.clone());
 
     assert_eq!(
         Proofs::<T>::get(&claim),
