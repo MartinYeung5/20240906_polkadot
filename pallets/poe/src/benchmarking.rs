@@ -15,6 +15,8 @@ mod benchmarks {
     use super::*;
 
     #[benchmark]
+    fn create_claim()
+
     fn do_something() {
         let value = 100u32.into();
         let caller: T::AccountId = whitelisted_caller();
