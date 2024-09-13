@@ -24,7 +24,8 @@ mod benchmarks {
     create_clone(RawOrigin::Signed(caller.clone()), claim.clone());
 
     assert_eq!(
-        
+        Proofs::<T>::get(&claim),
+        Some((caller, frame_system::Pallet::<T>::block_number()))
     )
 
     fn do_something() {
