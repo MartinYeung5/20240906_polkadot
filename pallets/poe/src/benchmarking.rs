@@ -17,7 +17,7 @@ mod benchmarks {
     #[benchmark]
     fn create_claim(b: Linear<1, {T::MaxClaimLength::get()}>) -> Result<(), BenchmarkError> {
         let caller: T::AccountId = whitelisted_caller();
-        
+        lewt claim = BoundedVec::try_from(vec![0; b as uzize].unwrap());
     }
 
     fn do_something() {
