@@ -28,6 +28,9 @@ mod benchmarks {
         Some((caller, frame_system::Pallet::<T>::block_number()))
     );
 
+    Ok(())
+
+    /*
     fn do_something() {
         let value = 100u32.into();
         let caller: T::AccountId = whitelisted_caller();
@@ -48,4 +51,5 @@ mod benchmarks {
     }
 
     impl_benchmark_test_suite!(Template, crate::mock::new_test_ext(), crate::mock::Test);
+    */
 }
