@@ -16,6 +16,7 @@ mod benchmarks {
 
     #[benchmark]
     fn create_claim(b: Linear<1, {T::MaxClaimLength::get()}>) -> Result<(), BenchmarkError> {
+        let caller: T::AccountId = whitelisted_caller();
         
     }
 
