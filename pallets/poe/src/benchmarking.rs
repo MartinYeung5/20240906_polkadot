@@ -15,7 +15,9 @@ mod benchmarks {
     use super::*;
 
     #[benchmark]
-    fn create_claim()
+    fn create_claim(b: Linear<1, {T::MaxClaimLength::get()}>) -> Result<(), BenchmarkError> {
+        
+    }
 
     fn do_something() {
         let value = 100u32.into();
