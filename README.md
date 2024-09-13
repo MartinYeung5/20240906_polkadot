@@ -36,7 +36,7 @@ row:345: [pallet_poe, PoeModule]
 # homework-2
 修改/編寫文檔:
 * poe/src/benchmarking.rs
-* 將benchmark功能引入到runtime
+*將benchmark功能引入到runtime
 * runtime/src/lib.rs (加[pallet_poe, PoeModule])
 * runtime/Cargo.toml (加"pallet-poe/runtime-benchmarks", 它是一個runtime benchmark)
 * Cargo.toml
@@ -48,6 +48,22 @@ row:345: [pallet_poe, PoeModule]
 
 # 測試方法：
 cargo build --profile=production --features runtime-benchmarks
+
+# error:
+error: failed to load manifest for workspace member `/home/yeung/substrate/polkadot-sdk-solo-template-dev-courses/node`
+referenced by workspace at `/home/yeung/substrate/polkadot-sdk-solo-template-dev-courses/Cargo.toml`
+
+Caused by:
+  failed to load manifest for dependency `solochain-template-runtime`
+
+Caused by:
+  failed to parse manifest at `/home/yeung/substrate/polkadot-sdk-solo-template-dev-courses/runtime/Cargo.toml`
+
+Caused by:
+  feature `runtime-benchmarks` includes `pallet-poe/runtime-benchmarks`, but `pallet-poe` is not a dependency
+
+solution:
+update runtime/Cargo.toml
 
 
 ## github

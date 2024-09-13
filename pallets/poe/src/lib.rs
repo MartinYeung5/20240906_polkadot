@@ -92,11 +92,15 @@ pub mod pallet {
             claim: BoundedVec<u8, T::MaxClaimLength>
         ) -> DispatchResult {
             let sender = ensure_signed(origin)?;
+
             let (owner, _) = Proofs::<T>::get(&claim).ok_or(Error::<T>::ClaimNotExist)?;
 
             ensure!(owner == sender, Error::<T>::NotClaimOwner);
+
             Proofs::<T>::remove(&claim);
+
             Self::deposit_event(Event::ClaimRevoked(sender, claim));
+
             Ok(().into())
         }
 
@@ -109,14 +113,18 @@ pub mod pallet {
             target: T::AccountId,
         ) -> DispatchResult {
             let sender = ensure_signed(origin)?;
+
             let (owner, _) = Proofs::<T>::get(&claim).ok_or(Error::<T>::ClaimNotExist)?;
 
             ensure!(owner == sender, Error::<T>::NotClaimOwner);
+
             Proofs::<T>::insert(
                 &claim,
                 (target.clone(), frame_system::Pallet::<T>::block_number())
             );
+
             Self::deposit_event(Event::ClaimTransfered(sender, target, claim));
+
             Ok(().into())
         }
     }
