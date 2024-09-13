@@ -41,7 +41,9 @@ row:345: [pallet_poe, PoeModule]
 * runtime/Cargo.toml (加"pallet-poe/runtime-benchmarks", 它是一個runtime benchmark)
 * poe/src/mock.rs
 * Cargo.toml
-* poe/src/Cargo.toml (引用std)
+* poe/src/Cargo.toml 
+(引用 sp-std = { git = "https://github.com/paritytech/polkadot-sdk.git", tag = "polkadot-v1.10.0", default-features = false }
+)
 
 # 測試方法：
 
