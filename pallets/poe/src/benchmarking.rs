@@ -26,7 +26,7 @@ mod benchmarks {
     assert_eq!(
         Proofs::<T>::get(&claim),
         Some((caller, frame_system::Pallet::<T>::block_number()))
-    )
+    );
 
     fn do_something() {
         let value = 100u32.into();
