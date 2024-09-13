@@ -37,14 +37,23 @@ row:345: [pallet_poe, PoeModule]
 修改/編寫文檔:
 * poe/src/benchmarking.rs
 *將benchmark功能引入到runtime
+
+* poe/src/Cargo.toml 
+1. (引用 sp-std = { git = "https://github.com/paritytech/polkadot-sdk.git", tag = "polkadot-v1.10.0", default-features = false }
+)
+2. (加入 "sp-std/std",)
+
+* create .maintain
+
 * runtime/src/lib.rs (加[pallet_poe, PoeModule])
+[9:00]
 * runtime/Cargo.toml (加"pallet-poe/runtime-benchmarks", 它是一個runtime benchmark)
 * Cargo.toml
-* poe/src/Cargo.toml 
-(引用 sp-std = { git = "https://github.com/paritytech/polkadot-sdk.git", tag = "polkadot-v1.10.0", default-features = false }
-)
-(加入 "sp-std/std",)
-* create .maintain
+
+# 改錯
+https://github.com/coretime-dev/play-substrate/blob/master/pallets/poe/src/benchmarking.rs
+benchmarking.rs
+use frame_support::{BoundedVec, pallet_prelude::Get};
 
 # 測試方法：
 cargo build --profile=production --features runtime-benchmarks
