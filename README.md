@@ -1,6 +1,17 @@
 # 20240906
 ## task1 test
 20240906 完成
+# homework-1
+修改/編寫文檔:
+* poe/src/ests.rs
+* poe/src/lib.rs
+* poe/src/mock.rs
+* Cargo.toml
+* poe/src/Cargo.toml
+
+# 測試方法：
+cargo test -p pallet-poe
+
 
 # 20240909
 https://youtu.be/yZ-LPBslotc
@@ -22,6 +33,15 @@ row:345: [pallet_poe, PoeModule]
 --template .maintain/frame-weight-template.hbs
 
 # 20240913
+# homework-2
+修改/編寫文檔:
+* poe/src/ests.rs
+* poe/src/lib.rs
+* poe/src/mock.rs
+* Cargo.toml
+* poe/src/Cargo.toml
+
+# 測試方法：
 
 
 ## github
