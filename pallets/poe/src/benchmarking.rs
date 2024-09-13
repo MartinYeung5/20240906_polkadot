@@ -20,6 +20,13 @@ mod benchmarks {
         lewt claim = BoundedVec::try_from(vec![0; b as uzize].unwrap());
     }
 
+    #[extrinsic_call]
+    create_clone(RawOrigin::Signed(caller.clone()), claim.clone());
+
+    assert_eq!(
+        
+    )
+
     fn do_something() {
         let value = 100u32.into();
         let caller: T::AccountId = whitelisted_caller();
