@@ -44,6 +44,7 @@ row:345: [pallet_poe, PoeModule]
 * poe/src/Cargo.toml 
 (引用 sp-std = { git = "https://github.com/paritytech/polkadot-sdk.git", tag = "polkadot-v1.10.0", default-features = false }
 )
+(加入 "sp-std/std",)
 
 # 測試方法：
 
