@@ -35,8 +35,7 @@ row:345: [pallet_poe, PoeModule]
 # 20240913
 # homework-2
 修改/編寫文檔:
-* poe/src/ests.rs
-* poe/src/lib.rs
+* runtime/src/lib.rs (加[pallet_poe, PoeModule])
 * poe/src/mock.rs
 * Cargo.toml
 * poe/src/Cargo.toml
