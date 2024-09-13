@@ -35,7 +35,7 @@ row:345: [pallet_poe, PoeModule]
 # 20240913
 # homework-2
 修改/編寫文檔:
-* poe/src/bencgmarking.rs
+* poe/src/benchmarking.rs
 * 將benchmark功能引入到runtime
 * runtime/src/lib.rs (加[pallet_poe, PoeModule])
 * runtime/Cargo.toml (加"pallet-poe/runtime-benchmarks", 它是一個runtime benchmark)
