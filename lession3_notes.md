@@ -101,6 +101,8 @@ update error.rs
 2. implement an offchain worker in kitties pallet
 3. get the Dot price and put the Dollar amount in event
 
+
+
 # homework-3
 影片中提到的homework3的repo是這個
 https://github.com/papermoonio/polkadot-sdk-course-code/tree/main/advance/lesson-3
