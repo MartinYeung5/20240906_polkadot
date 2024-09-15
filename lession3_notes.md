@@ -61,7 +61,8 @@ kittie的調用順序是按照runtime所編排的順序
 mock.rs (可改動順序?)
 
 * Balances PAllet [25:04]
-
+1. 怎樣和一條鏈的native token進行交互
+2. 把reserve/unreserve應用到kitties中
 
 # homework-3
 影片中提到的homework3的repo是這個
