@@ -45,7 +45,16 @@ row:345: [pallet_poe, PoeModule]
 
 * create .maintain
 
-* runtime/src/lib.rs (加[pallet_poe, PoeModule]) (line 346)
+* runtime/src/lib.rs 
+1. #[runtime::pallet_index(8)]
+    pub type PoeModule = pallet_poe; (line298)
+2. (加[pallet_poe, PoeModule]) (line 346)
+3. /// Import the template pallet.
+pub use pallet_poe;
+4. impl pallet_poe::Config for Runtime {
+	type RuntimeEvent = RuntimeEvent;
+	type MaxClaimLength = ConstU32<3>;
+}
 [9:00]
 * runtime/Cargo.toml 
 1. (加"pallet-poe/runtime-benchmarks", 它是一個runtime benchmark)
