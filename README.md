@@ -158,6 +158,8 @@ use frame_support::{BoundedVec, pallet_prelude::Get};
 3. 可以透過多個的區塊進行upgrade
 
 * on_initialized [14:22]
+所有必須在這個區塊的動作，會在這裡做好準備。
+值得注意: 在當下所用到的所有數值都是舊的，包括pallet-timestamp，因為在當下是仍未完成更新。
 
 
 # homework-3
