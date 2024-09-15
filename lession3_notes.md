@@ -65,6 +65,8 @@ mock.rs (可改動順序?)
 2. 把reserve/unreserve應用到kitties中
 3. 把轉移Kitty的所有權的時候做Token的轉移
 
+
+
 # homework-3
 影片中提到的homework3的repo是這個
 https://github.com/papermoonio/polkadot-sdk-course-code/tree/main/advance/lesson-3
