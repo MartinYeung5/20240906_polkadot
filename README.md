@@ -165,6 +165,8 @@ use frame_support::{BoundedVec, pallet_prelude::Get};
 它是一個可以選擇的調用單元，如果一個區塊在upgrade時，initialize消耗太多weights時，poll就不會被調用。
 這個也是它和on_initialize的最大分別，另外，它是在inherent之後才執行。
 
+* 代碼講解[17:00]
+
 # homework-3
 影片中提到的homework3的repo是這個
 https://github.com/papermoonio/polkadot-sdk-course-code/tree/main/advance/lesson-3
