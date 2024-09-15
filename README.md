@@ -46,8 +46,8 @@ row:345: [pallet_poe, PoeModule]
 
 * 第4個:runtime/src/lib.rs 
 1. #[runtime::pallet_index(8)]
-    pub type PoeModule = pallet_poe; (line298)
-2. (加[pallet_poe, PoeModule]) (line 346)
+    pub type PoeModule = pallet_poe; 
+2. 加上[pallet_poe, PoeModule]
 3. /// Import the template pallet.
 pub use pallet_poe;
 4. impl pallet_poe::Config for Runtime {
