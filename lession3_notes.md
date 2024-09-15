@@ -69,6 +69,8 @@ mock.rs (可改動順序?)
  建議看官方源代碼
 
 * src/extrinsics.rs [29:42]
+random value還沒實現
+
 
 
 # homework-3
