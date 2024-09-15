@@ -109,8 +109,12 @@ update error.rs
 * update src/config.rs [58:35]
 type Currency: Currency<Self::AccountId> + ReservableCurrency<Self::AccountId>;
 
-
 * src/extrinsics.rs [1:00:00]
+
+* src/lib.rs [1:05:30]
+
+* src/hooks.rs [1:06:30]
+
 
 # homework-3
 影片中提到的homework3的repo是這個
