@@ -129,6 +129,12 @@ use frame_support::{BoundedVec, pallet_prelude::Get};
 2. on_finalize
 3. on_idle
 4. on_runtime_upgrade
+5. on_genesis
+6. offchain_worker
+7. on_poll
+8. pre_upgrade (不討論)
+9. post_upgrade (不討論)
+10. try_state (不討論)
 
 # homework-3
 影片中提到的homework3的repo是這個
