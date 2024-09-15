@@ -73,6 +73,10 @@ impl pallet_poe::Config for Runtime {
 4. "pallet-poe/try-runtime",
 
 * 第六個: Cargo.toml
+1. 在members內加入poe
+```
+'pallets/poe',
+```
 
 # 改錯
 https://github.com/coretime-dev/play-substrate/blob/master/pallets/poe/src/benchmarking.rs
