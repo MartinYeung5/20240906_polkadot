@@ -152,6 +152,7 @@ use frame_support::{BoundedVec, pallet_prelude::Get};
 最後會去到AfterExtrinsics，在這部分會執行Onidle和OnFinialize。
 
 * on_runtime_upgrade[12:15]
+在處理一個區塊時，第一個被調用的module(模塊)就是它。
 
 # homework-3
 影片中提到的homework3的repo是這個
