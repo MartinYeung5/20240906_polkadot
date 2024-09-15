@@ -73,7 +73,7 @@ impl pallet_poe::Config for Runtime {
 4. "pallet-poe/try-runtime",
 
 * 第六個: Cargo.toml
-1. 在members內加入poe
+1. 在members內加入poe (在上一練習應該有加入)
 ```
 'pallets/poe',
 ```
