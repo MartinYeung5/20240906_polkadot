@@ -109,11 +109,15 @@ Caused by:
 * solution:
 1. update runtime/Cargo.toml
 
-
-## github
-https://github.com/MartinYeung5/20240906_polkadot
-
 # 改錯
 https://github.com/coretime-dev/play-substrate/blob/master/pallets/poe/src/benchmarking.rs
 benchmarking.rs
 use frame_support::{BoundedVec, pallet_prelude::Get};
+
+# 20240915
+# 第3課筆記
+
+# homework-3
+
+## github
+https://github.com/MartinYeung5/20240906_polkadot
