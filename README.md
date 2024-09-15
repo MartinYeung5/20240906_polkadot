@@ -47,7 +47,11 @@ row:345: [pallet_poe, PoeModule]
 
 * runtime/src/lib.rs (加[pallet_poe, PoeModule])
 [9:00]
-* runtime/Cargo.toml (加"pallet-poe/runtime-benchmarks", 它是一個runtime benchmark)
+* runtime/Cargo.toml 
+1. (加"pallet-poe/runtime-benchmarks", 它是一個runtime benchmark)
+2. pallet-poe = { default-features = false, path = "../pallets/poe"}
+3. "pallet-poe/std",
+4. "pallet-poe/try-runtime",
 * Cargo.toml
 
 # 改錯
