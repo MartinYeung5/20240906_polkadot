@@ -127,6 +127,8 @@ use frame_support::{BoundedVec, pallet_prelude::Get};
 * Hooks [4:25]
 1. on_initialized
 2. on_finalize
+3. on_idle
+4. on_runtime_upgrade
 
 # homework-3
 影片中提到的homework3的repo是這個
