@@ -151,7 +151,7 @@ use frame_support::{BoundedVec, pallet_prelude::Get};
 接著會去到Extrinsics，交易會按照順序執行，
 最後會去到AfterExtrinsics，在這部分會執行Onidle和OnFinialize。
 
-[12:15]
+* on_runtime_upgrade[12:15]
 
 # homework-3
 影片中提到的homework3的repo是這個
