@@ -111,8 +111,8 @@ Caused by:
 Caused by:
   feature `runtime-benchmarks` includes `pallet-poe/runtime-benchmarks`, but `pallet-poe` is not a dependency
 
-solution:
-update runtime/Cargo.toml
+* solution:
+1. update runtime/Cargo.toml
 
 
 ## github
