@@ -61,8 +61,10 @@ impl pallet_poe::Config for Runtime {
 #[runtime::pallet_index(8)]
     pub type PoeModule = pallet_poe; 
 ```
-4. 加上[pallet_poe, PoeModule]
-
+4. 需要在mod benches 加上pallet_poe
+```
+[pallet_poe, PoeModule]
+```
 
 [9:00]
 * runtime/Cargo.toml 
