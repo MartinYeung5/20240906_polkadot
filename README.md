@@ -125,6 +125,8 @@ use frame_support::{BoundedVec, pallet_prelude::Get};
 5. bid (highest, earliest)
 
 # homework-3
+影片中提到的homework3的repo是這個
+https://github.com/papermoonio/polkadot-sdk-course-code/tree/main/advance/lesson-3
 
 ## github
 https://github.com/MartinYeung5/20240906_polkadot
