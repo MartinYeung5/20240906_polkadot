@@ -121,7 +121,8 @@ use frame_support::{BoundedVec, pallet_prelude::Get};
 2. breed
 3. transfer
 4. sale
-5. bid
+在指定時間進行銷售?
+5. bid (highest, earliest)
 
 # homework-3
 
