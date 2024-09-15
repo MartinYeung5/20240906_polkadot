@@ -75,9 +75,16 @@ pallet-poe = { default-features = false, path = "../pallets/poe"}
 ```
 "pallet-poe/std",
 ```
-1. 加"pallet-poe/runtime-benchmarks", 它是一個runtime benchmark
+3. 在runtime-benchmarks引入pallet-poe
+```
+"pallet-poe/runtime-benchmarks",
+```
 
-4. "pallet-poe/try-runtime",
+加"pallet-poe/runtime-benchmarks", 它是一個runtime benchmark
+```
+"pallet-poe/try-runtime",
+```
+
 
 * 第六個: Cargo.toml
 1. 在members內加入poe (在上一練習應該有加入)
