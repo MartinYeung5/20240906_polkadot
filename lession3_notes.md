@@ -66,7 +66,9 @@ mock.rs (可改動順序?)
 3. 把轉移Kitty的所有權的時候做Token的轉移
 
 * pallet 實現 (balances) [27:38]
-
+ 建議看官方源代碼
+ 
+* 
 # homework-3
 影片中提到的homework3的repo是這個
 https://github.com/papermoonio/polkadot-sdk-course-code/tree/main/advance/lesson-3
