@@ -71,9 +71,12 @@ impl pallet_poe::Config for Runtime {
 ```
 pallet-poe = { default-features = false, path = "../pallets/poe"}
 ```
+2. 在std引入 pallet-poe
+```
+"pallet-poe/std",
+```
 1. 加"pallet-poe/runtime-benchmarks", 它是一個runtime benchmark
-2. pallet-poe = { default-features = false, path = "../pallets/poe"}
-3. "pallet-poe/std",
+
 4. "pallet-poe/try-runtime",
 
 * 第六個: Cargo.toml
