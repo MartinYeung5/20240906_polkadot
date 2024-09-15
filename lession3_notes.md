@@ -71,6 +71,7 @@ mock.rs (可改動順序?)
 * src/extrinsics.rs [29:42]
 random value還沒實現
 
+* src/impls.rs [30:27]
 
 
 # homework-3
