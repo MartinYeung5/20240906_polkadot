@@ -79,8 +79,7 @@ pallet-poe = { default-features = false, path = "../pallets/poe"}
 ```
 "pallet-poe/runtime-benchmarks",
 ```
-
-加"pallet-poe/runtime-benchmarks", 它是一個runtime benchmark
+4. 在runtime benchmark，引入allet-poe
 ```
 "pallet-poe/try-runtime",
 ```
