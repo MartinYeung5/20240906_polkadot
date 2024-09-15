@@ -106,6 +106,11 @@ update error.rs
 
 * 與balance交互 [58:00]
 
+* update src/config.rs [58:35]
+type Currency: Currency<Self::AccountId> + ReservableCurrency<Self::AccountId>;
+
+
+* src/extrinsics.rs [1:00:00]
 
 # homework-3
 影片中提到的homework3的repo是這個
