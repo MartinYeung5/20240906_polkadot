@@ -144,7 +144,7 @@ use frame_support::{BoundedVec, pallet_prelude::Get};
 10. try_state (不討論)
 
 * Block執行過程 [8:10]
-首先，在有需要時會執行OnFuntimeUpgrade，
+首先，在有需要時會執行OnRuntimeUpgrade，
 
 # homework-3
 影片中提到的homework3的repo是這個
