@@ -79,7 +79,7 @@ pallet-poe = { default-features = false, path = "../pallets/poe"}
 ```
 "pallet-poe/runtime-benchmarks",
 ```
-4. 在try-runtime，引入allet-poe
+4. 在try-runtime，引入pallet-poe
 ```
 "pallet-poe/try-runtime",
 ```
