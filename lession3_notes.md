@@ -84,6 +84,9 @@ update error.rs
 
 * check [34:48]
 
+* src/texts.rs [35:19]
+寫測試代碼
+
 
 # homework-3
 影片中提到的homework3的repo是這個
