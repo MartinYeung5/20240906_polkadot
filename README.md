@@ -126,15 +126,24 @@ use frame_support::{BoundedVec, pallet_prelude::Get};
 
 * Hooks [4:25]
 1. on_initialized
+在區塊開始時
 2. on_finalize
+在區塊結束時
 3. on_idle
+當有一些處理可以在不同區塊執行，即是不一定在當下區塊執行，就可以利用on_idle。
 4. on_runtime_upgrade
+在區塊開始時，又有一些代碼改變時, 可以進行upgrade
 5. on_genesis
+
 6. offchain_worker
+超動一些線下線程
 7. on_poll
+是一個optional的動作
 8. pre_upgrade (不討論)
 9. post_upgrade (不討論)
 10. try_state (不討論)
+
+* Block執行過程 [8:10]
 
 # homework-3
 影片中提到的homework3的repo是這個
