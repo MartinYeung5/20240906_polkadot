@@ -90,11 +90,6 @@ pallet-poe = { default-features = false, path = "../pallets/poe"}
 'pallets/poe',
 ```
 
-# 改錯
-https://github.com/coretime-dev/play-substrate/blob/master/pallets/poe/src/benchmarking.rs
-benchmarking.rs
-use frame_support::{BoundedVec, pallet_prelude::Get};
-
 # 測試方法：
 cargo build --profile=production --features runtime-benchmarks
 
@@ -117,3 +112,8 @@ Caused by:
 
 ## github
 https://github.com/MartinYeung5/20240906_polkadot
+
+# 改錯
+https://github.com/coretime-dev/play-substrate/blob/master/pallets/poe/src/benchmarking.rs
+benchmarking.rs
+use frame_support::{BoundedVec, pallet_prelude::Get};
