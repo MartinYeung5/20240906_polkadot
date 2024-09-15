@@ -51,6 +51,9 @@
 
 * 代碼講解[17:00]
 
+* [21:32]
+RUST_LOG=info cargo test
+
 # homework-3
 影片中提到的homework3的repo是這個
 https://github.com/papermoonio/polkadot-sdk-course-code/tree/main/advance/lesson-3
