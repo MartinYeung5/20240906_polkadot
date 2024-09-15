@@ -157,6 +157,9 @@ use frame_support::{BoundedVec, pallet_prelude::Get};
 2. 在upgrade時，會花大量時間去處理各種事，有機會出現超時，影響同步狀態。
 3. 可以透過多個的區塊進行upgrade
 
+* on_initialized [14:22]
+
+
 # homework-3
 影片中提到的homework3的repo是這個
 https://github.com/papermoonio/polkadot-sdk-course-code/tree/main/advance/lesson-3
