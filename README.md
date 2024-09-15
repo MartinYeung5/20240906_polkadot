@@ -145,6 +145,11 @@ use frame_support::{BoundedVec, pallet_prelude::Get};
 
 * Block執行過程 [8:10]
 首先，在有需要時會執行OnRuntimeUpgrade，
+在BeforeExtrinsics，會執行OnInitialize (會優先)，
+之後會去到Inherents，當完成之後，
+會去到OnPoll部分，然後執行OnPoll，但這部分是選擇性的，不一定會執行。
+接著會去到Extrinsics，交易會按照順序執行，
+最後會去到AfterExtrinsics，在這部分會執行Onidle和OnFinialize
 
 # homework-3
 影片中提到的homework3的repo是這個
