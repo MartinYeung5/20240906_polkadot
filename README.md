@@ -116,6 +116,12 @@ use frame_support::{BoundedVec, pallet_prelude::Get};
 
 # 20240915
 # 第3課筆記
+* Kitties Pallet
+1. create
+2. breed
+3. transfer
+4. sale
+5. bid
 
 # homework-3
 
