@@ -102,7 +102,7 @@ update error.rs
 3. get the Dot price and put the Dollar amount in event
 
 * offchain worker 例子 [50:50]
-
+1. 官方例子
 
 
 # homework-3
