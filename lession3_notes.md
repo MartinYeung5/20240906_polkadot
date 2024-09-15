@@ -65,7 +65,7 @@ mock.rs (可改動順序?)
 2. 把reserve/unreserve應用到kitties中
 3. 把轉移Kitty的所有權的時候做Token的轉移
 
-
+* pallet 實現 [27:38]
 
 # homework-3
 影片中提到的homework3的repo是這個
