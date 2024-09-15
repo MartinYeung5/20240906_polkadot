@@ -84,7 +84,7 @@ update error.rs
 
 * check [34:48]
 
-* src/texts.rs [35:19]
+* src/tests.rs [35:19]
 寫測試代碼
 
 * src/extrinsics.rs [38:25]
