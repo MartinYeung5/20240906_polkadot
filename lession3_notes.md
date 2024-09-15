@@ -73,6 +73,9 @@ random value還沒實現
 
 * src/impls.rs [30:27]
 
+* src/config.rs [30:47]
+已經可以從Randomness獲得random number
+
 
 # homework-3
 影片中提到的homework3的repo是這個
