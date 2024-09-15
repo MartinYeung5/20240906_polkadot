@@ -89,8 +89,12 @@ update error.rs
 
 * src/extrinsics.rs [38:25]
 
-* src/texts.rs [40:00]
+* src/tests.rs [40:00]
 寫測試代碼
+
+* events.rs [43:00]
+
+* src/tests.rs [44:20]
 
 # homework-3
 影片中提到的homework3的repo是這個
