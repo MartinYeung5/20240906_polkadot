@@ -3,7 +3,7 @@
 20240906 完成
 # homework-1
 修改/編寫文檔:
-* poe/src/ests.rs
+* poe/src/tests.rs
 * poe/src/lib.rs
 * poe/src/mock.rs
 * Cargo.toml
@@ -26,7 +26,7 @@ row:345: [pallet_poe, PoeModule]
 --execution=wasm \
 --wasm-execution=compiled \
 --pallet pallet_poe \
---extrinc "*" \
+--extrinsic "*" \
 --steps 20 \
 --repeat 10 \
 --output pallets/poe/src/weights.rs \
