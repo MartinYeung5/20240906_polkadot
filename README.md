@@ -71,7 +71,8 @@ impl pallet_poe::Config for Runtime {
 2. pallet-poe = { default-features = false, path = "../pallets/poe"}
 3. "pallet-poe/std",
 4. "pallet-poe/try-runtime",
-* Cargo.toml
+
+* 第六個: Cargo.toml
 
 # 改錯
 https://github.com/coretime-dev/play-substrate/blob/master/pallets/poe/src/benchmarking.rs
