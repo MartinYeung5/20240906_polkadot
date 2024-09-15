@@ -145,6 +145,7 @@ use frame_support::{BoundedVec, pallet_prelude::Get};
 
 * Block執行過程 [8:10]
 首先，在有需要時會執行OnFuntimeUpgrade，
+
 # homework-3
 影片中提到的homework3的repo是這個
 https://github.com/papermoonio/polkadot-sdk-course-code/tree/main/advance/lesson-3
