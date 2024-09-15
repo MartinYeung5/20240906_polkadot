@@ -104,6 +104,8 @@ update error.rs
 * offchain worker 例子 [50:50]
 1. 官方例子
 
+* 與balance交互 [58:00]
+
 
 # homework-3
 影片中提到的homework3的repo是這個
