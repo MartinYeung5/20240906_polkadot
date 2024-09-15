@@ -94,7 +94,7 @@ pallet-poe = { default-features = false, path = "../pallets/poe"}
 cargo build --profile=production --features runtime-benchmarks
 
 # error:
-error: failed to load manifest for workspace member `/home/yeung/substrate/polkadot-sdk-solo-template-dev-courses/node`
+* error: failed to load manifest for workspace member `/home/yeung/substrate/polkadot-sdk-solo-template-dev-courses/node`
 referenced by workspace at `/home/yeung/substrate/polkadot-sdk-solo-template-dev-courses/Cargo.toml`
 
 Caused by:
