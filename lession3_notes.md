@@ -68,7 +68,7 @@ mock.rs (可改動順序?)
 * pallet 實現 (balances) [27:38]
  建議看官方源代碼
 
-* [29:42]
+* src/extrinsics.rs [29:42]
 
 
 # homework-3
