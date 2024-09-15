@@ -45,11 +45,14 @@ row:345: [pallet_poe, PoeModule]
 * 第3個:create .maintain
 
 * 第4個:runtime/src/lib.rs 
+1. 需要引入poe pallet.
+```
+pub use pallet_poe;
+```
 1. #[runtime::pallet_index(8)]
     pub type PoeModule = pallet_poe; 
 2. 加上[pallet_poe, PoeModule]
-3. /// Import the template pallet.
-pub use pallet_poe;
+
 4. impl pallet_poe::Config for Runtime {
 	type RuntimeEvent = RuntimeEvent;
 	type MaxClaimLength = ConstU32<3>;
