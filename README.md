@@ -155,6 +155,7 @@ use frame_support::{BoundedVec, pallet_prelude::Get};
 在處理一個區塊時，第一個被調用的module(模塊)就是它。
 1. 當下的區塊的資料是不會知道，只能夠知道上一個區塊的資料。[12:50]
 2. 在upgrade時，會花大量時間去處理各種事，有機會出現超時，影響同步狀態。
+3. 可以透過多個的區塊進行upgrade
 
 # homework-3
 影片中提到的homework3的repo是這個
