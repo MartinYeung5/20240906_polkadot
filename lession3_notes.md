@@ -76,6 +76,7 @@ random value還沒實現
 * src/config.rs [30:47]
 已經可以從Randomness獲得random number
 
+* src/extrinsics.rs [31:10]
 
 # homework-3
 影片中提到的homework3的repo是這個
