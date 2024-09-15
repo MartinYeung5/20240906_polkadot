@@ -161,6 +161,9 @@ use frame_support::{BoundedVec, pallet_prelude::Get};
 所有必須在這個區塊的動作，會在這裡做好準備。
 值得注意: 在當下所用到的所有數值都是舊的，包括pallet-timestamp，因為在當下是仍未完成更新。
 
+* on_poll[15:52]
+它是一個可以選擇的調用單元，如果一個區塊在upgrade時，initialize消耗太多weights時，poll就不會被調用。
+這個也是它和on_initialize的最大分別，另外，它是在inherent之後才執行。
 
 # homework-3
 影片中提到的homework3的repo是這個
