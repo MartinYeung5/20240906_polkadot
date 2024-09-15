@@ -125,6 +125,8 @@ use frame_support::{BoundedVec, pallet_prelude::Get};
 5. bid (highest, earliest)
 
 * Hooks [4:25]
+1. on_initialized
+2. on_finalize
 
 # homework-3
 影片中提到的homework3的repo是這個
