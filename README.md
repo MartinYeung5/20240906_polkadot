@@ -35,18 +35,16 @@ row:345: [pallet_poe, PoeModule]
 # 20240913
 # homework-2
 修改/編寫/新增文檔:
-第1個:
-* poe/src/benchmarking.rs
-*將benchmark功能引入到runtime
+* 第1個:poe/src/benchmarking.rs
+1. 將benchmark功能引入到runtime
 
-* poe/src/Cargo.toml 
-1. (引用 sp-std = { git = "https://github.com/paritytech/polkadot-sdk.git", tag = "polkadot-v1.10.0", default-features = false }
-)
-2. (加入 "sp-std/std",)
+* 第2個:poe/src/Cargo.toml 
+1. 引用 sp-std = { git = "https://github.com/paritytech/polkadot-sdk.git", tag = "polkadot-v1.10.0", default-features = false }
+2. 加入 "sp-std/std",
 
-* create .maintain
+* 第3個:create .maintain
 
-* runtime/src/lib.rs 
+* 第4個:runtime/src/lib.rs 
 1. #[runtime::pallet_index(8)]
     pub type PoeModule = pallet_poe; (line298)
 2. (加[pallet_poe, PoeModule]) (line 346)
