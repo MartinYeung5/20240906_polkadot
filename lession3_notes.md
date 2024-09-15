@@ -78,6 +78,13 @@ random value還沒實現
 
 * src/extrinsics.rs [31:10]
 
+* src/error.rs [34:35]
+update error.rs
+加入 KittyIdOverflow
+
+* check [34:48]
+
+
 # homework-3
 影片中提到的homework3的repo是這個
 https://github.com/papermoonio/polkadot-sdk-course-code/tree/main/advance/lesson-3
