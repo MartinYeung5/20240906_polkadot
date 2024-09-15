@@ -60,6 +60,8 @@ RUST_LOG=info cargo test
 kittie的調用順序是按照runtime所編排的順序
 mock.rs (可改動順序?)
 
+* Balances PAllet [25:04]
+
 
 # homework-3
 影片中提到的homework3的repo是這個
