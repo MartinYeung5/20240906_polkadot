@@ -101,6 +101,8 @@ update error.rs
 2. implement an offchain worker in kitties pallet
 3. get the Dot price and put the Dollar amount in event
 
+* offchain worker 例子 [50:50]
+
 
 
 # homework-3
