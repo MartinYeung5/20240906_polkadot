@@ -96,6 +96,10 @@ update error.rs
 
 * src/tests.rs [44:20]
 
+* Offchain worker [47:50]
+1. how to add offchain worker in runtime
+2. implement an offchain worker in kitties pallet
+3. get the Dot price and put the Dollar amount in event
 
 # homework-3
 影片中提到的homework3的repo是這個
