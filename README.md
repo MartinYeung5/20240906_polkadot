@@ -45,7 +45,7 @@ row:345: [pallet_poe, PoeModule]
 
 * create .maintain
 
-* runtime/src/lib.rs (加[pallet_poe, PoeModule])
+* runtime/src/lib.rs (加[pallet_poe, PoeModule]) (line 346)
 [9:00]
 * runtime/Cargo.toml 
 1. (加"pallet-poe/runtime-benchmarks", 它是一個runtime benchmark)
