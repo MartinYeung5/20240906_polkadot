@@ -49,14 +49,21 @@ row:345: [pallet_poe, PoeModule]
 ```
 pub use pallet_poe;
 ```
-1. #[runtime::pallet_index(8)]
-    pub type PoeModule = pallet_poe; 
-2. 加上[pallet_poe, PoeModule]
-
-4. impl pallet_poe::Config for Runtime {
+2. 需要impl pallet_poe
+```
+impl pallet_poe::Config for Runtime {
 	type RuntimeEvent = RuntimeEvent;
 	type MaxClaimLength = ConstU32<3>;
 }
+```
+3. 需要在mod runtime 加入新的資料
+```
+#[runtime::pallet_index(8)]
+    pub type PoeModule = pallet_poe; 
+```
+4. 加上[pallet_poe, PoeModule]
+
+
 [9:00]
 * runtime/Cargo.toml 
 1. (加"pallet-poe/runtime-benchmarks", 它是一個runtime benchmark)
