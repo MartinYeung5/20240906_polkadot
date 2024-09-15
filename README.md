@@ -34,7 +34,8 @@ row:345: [pallet_poe, PoeModule]
 
 # 20240913
 # homework-2
-修改/編寫文檔:
+修改/編寫/新增文檔:
+第1個:
 * poe/src/benchmarking.rs
 *將benchmark功能引入到runtime
 
