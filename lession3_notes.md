@@ -124,7 +124,7 @@ sp-runtime = { git = "https://github.com/paritytech/polkadot-sdk.git", tag = "po
 * tests.rs [1:21:10]
 
 * src/mock.rs [1:22:19]
- Balances: pallet_balances;
+Balances: pallet_balances;
 另外要再修改hooks.rs
 
 
