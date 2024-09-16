@@ -115,6 +115,18 @@ type Currency: Currency<Self::AccountId> + ReservableCurrency<Self::AccountId>;
 
 * src/hooks.rs [1:06:30]
 
+* lib.rs [1:17:29]
+use sp_runtime::traits::Bounded;
+
+* kitties/Cargo.toml [1:19:25]
+sp-runtime = { git = "https://github.com/paritytech/polkadot-sdk.git", tag = "polkadot-v1.10.0", default-features = false  }
+
+* tests.rs [1:21:10]
+
+* src/mock.rs [1:22:19]
+ Balances: pallet_balances;
+另外要再修改hooks.rs
+
 
 # homework-3
 影片中提到的homework3的repo是這個
