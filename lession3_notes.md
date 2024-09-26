@@ -1,6 +1,7 @@
 # 20240915
+https://github.com/MartinYeung5/20240906_polkadot
 # 第3課筆記
-课程视频：https://youtu.be/Pu64MSlyQ_M
+https://youtu.be/Pu64MSlyQ_M
 * Kitties Pallet
 1. create
 2. breed
