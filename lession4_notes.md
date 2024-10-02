@@ -45,3 +45,5 @@ kitties/src/hooks.rs
 Data migration cases
 1. pallet name or storage name change
 2. 存儲的數據改變
+3. 
+4. 
