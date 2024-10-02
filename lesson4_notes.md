@@ -89,6 +89,7 @@ my testing
 
 重要:
 in 20240927_task3
+在20240927_task3加入polkadot-sdk-solo-template-dev-courses folder
 * cd polkadot-sdk-solo-template-dev-courses
 cargo build --release
 * ./polkadot-sdk-solo-template-dev-courses/target/release/solochain-template-node --dev --base-path /tmp/blockchain
