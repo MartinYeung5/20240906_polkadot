@@ -179,3 +179,6 @@ use codec::Encode;
 如果遇到以下錯誤，
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241002_12.png?raw=true)
 解決方法:
+
+[36:40]
+升級步驟
