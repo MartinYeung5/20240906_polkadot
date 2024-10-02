@@ -41,3 +41,6 @@ kitties/src/hooks.rs
 2. 不能解析之前的數據
 3. 解析出來的數據意義發生了變化
 
+[18:02]
+Data migration cases
+1. 
