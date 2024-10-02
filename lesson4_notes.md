@@ -103,3 +103,4 @@ in 20240927_task3
 * cargo build --release
 完成
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241002_1.png?raw=true)
+* ./polkadot-sdk-solo-template-dev-courses --dev --base-path /tmp/blockchain
