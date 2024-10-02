@@ -121,3 +121,4 @@ https://polkadot.js.org/apps/#/explorer?rpc=ws://localhost:9944
 開始測試:
 1. 提出交易
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241002_5.png?raw=true)
+2. 完成交易 (會看到右上角有綠色剔號)
