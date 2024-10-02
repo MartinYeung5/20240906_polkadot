@@ -67,4 +67,4 @@ update runtime/src/lib.rs
 1. 定義struct 
 
 [31:05]
-* cargorel --features
+* cargorel --features try-runtime
