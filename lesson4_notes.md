@@ -81,3 +81,8 @@ my testing
 * cargo test -p pallet-kitties
 * ./polkadot-sdk-solo-template-dev-courses --dev --base -path /tmp/blockchain
 * ./target/release/solochain-template-node --dev --tmp
+
+in 20240927_task3
+* cd polkadot-sdk-solo-template-dev-courses
+cargo build --release
+* ./target/release/solochain-template-node --dev --base -path /tmp/blockchain
