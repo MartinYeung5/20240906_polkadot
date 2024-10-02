@@ -101,6 +101,9 @@ https://polkadot.js.org/apps/#/explorer?rpc=ws://localhost:9944
 ### case 2
 in 20240927_task3
 * cargo build --release
-完成
+成功
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241002_1.png?raw=true)
-* ./polkadot-sdk-solo-template-dev-courses --dev --base-path /tmp/blockchain
+
+* ./target/release/solochain-template-node --dev --base-path /tmp/blockchain
+成功
+![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241002_2.png?raw=true)
