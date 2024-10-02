@@ -162,6 +162,7 @@ https://polkadot.js.org/apps/#/explorer?rpc=ws://localhost:9944
 
 如果遇到以下錯誤，
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241002_10.png?raw=true)
+解決方法:
 需要在kitties/src/lib.rs 加入:
 // TryRuntimeError
 use sp_runtime::TryRuntimeError;
@@ -169,6 +170,12 @@ use sp_runtime::TryRuntimeError;
 
 如果遇到以下錯誤，
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241002_11.png?raw=true)
+解決方法:
 需要在runtime/src/lib.rs 加入:
 use codec::Decode;
 use codec::Encode;
+
+
+如果遇到以下錯誤，
+![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241002_12.png?raw=true)
+解決方法:
