@@ -57,3 +57,4 @@ try-runtime --runtime ./target/release/wbuild/solochain-template-runtime/solocha
 
 update runtime/src/lib.rs
 [22:54]
+in lesson 3
