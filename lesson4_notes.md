@@ -74,3 +74,5 @@ update runtime/src/lib.rs
 type Migrations = (ExampleMigration<Runtime>);
 [33:00]
 invalid state
+(必須要執行狀態重置)
+* rm -rf /tmp/blockchain
