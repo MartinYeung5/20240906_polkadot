@@ -28,3 +28,5 @@ kitties/src/
 try runtime tool usage
 需要在一個定義的hook的方法做一個配合
 kitties/src/hooks.rs
+* pre_upgrade
+* post_upgrade
