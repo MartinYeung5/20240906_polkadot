@@ -154,4 +154,6 @@ https://polkadot.js.org/apps/#/explorer?rpc=ws://localhost:9944
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241002_8.png?raw=true)
 
 如果遇到以下錯誤，需要在Cargo.toml加入log
+![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241002_9.png?raw=true)
 
+"log = { version = "0.4.21", default-features = false }"
