@@ -188,4 +188,10 @@ use codec::Encode;
 
 [41:00]
 創建migration.rs
+[50:25]
+update hooks.rs
+加入
+migration::migrate_to_v1::<T>()
+//Weight::default()
+
 
