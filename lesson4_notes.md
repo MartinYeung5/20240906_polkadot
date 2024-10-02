@@ -87,7 +87,7 @@ https://polkadot.js.org/apps/#/explorer?rpc=ws://localhost:9944
 
 [31:00]
 為了測試，需要做version的升級
-
+由100升到101
 
 [31:05]
 * cargorel --features try-runtime
