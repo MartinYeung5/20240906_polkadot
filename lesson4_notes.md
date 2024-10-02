@@ -85,6 +85,10 @@ https://polkadot.js.org/apps/#/explorer?rpc=ws://localhost:9944
 6. 會在最下面顯示 kitties.nextKittyId():u32的最新ID
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241002_7.png?raw=true)
 
+[31:00]
+為了測試，需要做version的升級
+
+
 [31:05]
 * cargorel --features try-runtime
 [31:40]
