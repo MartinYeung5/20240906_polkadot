@@ -91,6 +91,8 @@ https://polkadot.js.org/apps/#/explorer?rpc=ws://localhost:9944
 
 [31:05]
 * cargorel --features try-runtime
+* cargo build --release --features try-runtime
+* cargo build --release
 
 [31:40]
 update runtime/src/lib.rs
