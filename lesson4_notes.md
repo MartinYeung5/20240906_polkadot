@@ -76,3 +76,6 @@ type Migrations = (ExampleMigration<Runtime>);
 invalid state
 (必須要執行狀態重置)
 * rm -rf /tmp/blockchain
+
+my testing
+* cargo test -p pallet-kitties
