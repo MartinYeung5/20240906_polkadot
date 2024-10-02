@@ -128,8 +128,58 @@ sp-runtime = { git = "https://github.com/paritytech/polkadot-sdk.git", tag = "po
 * src/mock.rs [1:22:19]
 Balances: pallet_balances;
 另外要再修改hooks.rs
+kitties/Cargo.toml
+* pallet-balances = { git = "https://github.com/paritytech/polkadot-sdk.git", tag = "polkadot-v1.10.0", default-features = false }
+* "pallet-balances/std"
 
 
 # homework-3
 影片中提到的homework3的repo是這個
 https://github.com/papermoonio/polkadot-sdk-course-code/tree/main/advance/lesson-3
+
+1. update config.rs
+根據影片中老師寫法
+[30:45]
+提到已用上Randomness
+2. update error.rs
+加入 KittyIdOverflow
+3. update events.rs
+加入 KittyBreeded, Transferred, OnSale, OnBid
+4. update extrinsics.rs
+影片中30:00有講解, 在47:40完
+5. update tests.rs
+[35:30]
+[41:23]
+判斷event有沒有的方式
+6. update lib.rs
+7. update extrinsics.rs
+[1:00:30]
+KittyOnSale
+update fn sale
+[1:03:00]
+update fn bid
+
+
+[1:05:30]
+update lib.rs
+ pub type KittiesBid<T: Config> = StorageMap<_, _, u32, Vec<(T::AccountId, BalanceOF<T>)>>;
+
+[1:06:30]
+update hooks.rs
+KittyOnSale
+
+[1:19:20]
+kitties/Cargo.toml
+加入
+sp-runtime = { git = "https://github.com/paritytech/polkadot-sdk.git", tag = "polkadot-v1.10.0" }
+
+# 測試方法：
+cargo test -p pallet-kitties
+
+Error:
+ pub use pallet::*;
+  ^^^^^^ help: a similar path exists: `pallet_insecure_randomness_collective_flip::pallet`
+
+Error:
+  error[E0599]: no function or associated item named `create` found for struct `frame_support::pallet_prelude::StorageMap` in the current scope
+   --> pallets/kitties/src/tests.rs:50:29
