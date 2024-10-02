@@ -186,3 +186,5 @@ use codec::Encode;
 [39:00]
 第2種升級的方法
 
+[41:00]
+創建migration.rs
