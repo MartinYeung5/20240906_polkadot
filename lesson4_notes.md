@@ -64,3 +64,4 @@ in lesson 3 folder,
 
 [23:58]
 update runtime/src/lib.rs
+1. 定義struct 
