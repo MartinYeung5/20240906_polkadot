@@ -88,11 +88,15 @@ my testing
 * ./polkadot-sdk-solo-template-dev-courses --dev --base-path /tmp/blockchain
 
 重要:
+### case 1
 in 20240927_task3
 在20240927_task3加入polkadot-sdk-solo-template-dev-courses folder
 * cd polkadot-sdk-solo-template-dev-courses
 cargo build --release
 * ./polkadot-sdk-solo-template-dev-courses/target/release/solochain-template-node --dev --base-path /tmp/blockchain
-
-
+* go to 
 https://polkadot.js.org/apps/#/explorer?rpc=ws://localhost:9944
+* 找不到kitties的pallet
+
+### case 2
+in 20240927_task3
