@@ -54,3 +54,5 @@ Data migration cases
 
 2. 在線測試
 try-runtime --runtime ./target/release/wbuild/solochain-template-runtime/solochain_template_runtime.wasm on-runtime-upgrade --checks pre-and-post --disable-idempotency-checks --no-weight-warnings live --url wa://127.0.0.1:9944
+
+update runtime/src/lib.rs
