@@ -53,4 +53,4 @@ Data migration cases
 * cargo install --git https://github.com/paritytech/try-runtime-cli --locked
 
 2. 在線測試
-try-runtime --runtime ./target/release/wbuild
+try-runtime --runtime ./target/release/wbuild/solochain-template-runtime
