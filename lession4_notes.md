@@ -23,3 +23,4 @@ support of upgrade
 在runtime/src/lib.rs做設置, 通過修改Migrations 和 fn on_runtime_upgrade
 [11:20]
 2. on_runtime_upgrade in pallet
+kitties/src/
