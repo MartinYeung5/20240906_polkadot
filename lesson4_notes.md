@@ -148,3 +148,5 @@ https://polkadot.js.org/apps/#/explorer?rpc=ws://localhost:9944
 2. ./target/release/solochain-template-node --dev --base-path /tmp/blockchain
 3. go to frontend 檢查
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241002_8.png?raw=true)
+
+
