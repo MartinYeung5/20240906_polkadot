@@ -171,3 +171,4 @@ use sp_runtime::TryRuntimeError;
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241002_11.png?raw=true)
 需要在runtime/src/lib.rs 加入:
 use codec::Decode;
+use codec::Encode;
