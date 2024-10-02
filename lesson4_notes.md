@@ -141,3 +141,8 @@ https://polkadot.js.org/apps/#/explorer?rpc=ws://localhost:9944
 2. 完成交易 (會看到右上角有綠色剔號)
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241002_6.png?raw=true)
 
+[34:00]
+執行升級前要清空所有狀態(如果有提出過交易)
+(必須要執行狀態重置)
+1. rm -rf /tmp/blockchain
+2. ./target/release/solochain-template-node --dev --base-path /tmp/blockchain
