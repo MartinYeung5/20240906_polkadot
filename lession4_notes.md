@@ -43,4 +43,4 @@ kitties/src/hooks.rs
 
 [18:02]
 Data migration cases
-1. 
+1. pallet name or storage name change
