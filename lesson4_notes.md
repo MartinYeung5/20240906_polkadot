@@ -79,12 +79,12 @@ invalid state
 
 my testing
 * cargo test -p pallet-kitties
-* ./polkadot-sdk-solo-template-dev-courses --dev --base -path /tmp/blockchain
+* ./polkadot-sdk-solo-template-dev-courses --dev --base-path /tmp/blockchain
 
 重要:
 in 20240927_task3
 * cd polkadot-sdk-solo-template-dev-courses
 cargo build --release
-* ./target/release/solochain-template-node --dev --base -path /tmp/blockchain
+* ./polkadot-sdk-solo-template-dev-courses/target/release/solochain-template-node --dev --base-path /tmp/blockchain
 
 
