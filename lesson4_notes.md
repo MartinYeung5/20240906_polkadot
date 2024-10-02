@@ -168,5 +168,5 @@ use sp_runtime::TryRuntimeError;
 
 
 如果遇到以下錯誤，
-
+![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241002_11.png?raw=true)
 use codec::Decode;
