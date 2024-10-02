@@ -165,3 +165,4 @@ https://polkadot.js.org/apps/#/explorer?rpc=ws://localhost:9944
 需要在kitties/src/lib.rs 加入:
 // TryRuntimeError
 use sp_runtime::TryRuntimeError;
+
