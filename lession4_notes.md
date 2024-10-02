@@ -24,3 +24,5 @@ support of upgrade
 [11:20]
 2. on_runtime_upgrade in pallet
 kitties/src/
+[12:00]
+try runtime tool usage
