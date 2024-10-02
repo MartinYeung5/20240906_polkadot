@@ -59,4 +59,4 @@ update runtime/src/lib.rs
 [22:54]
 in lesson 3 folder, 
 * rm -rf /tmp/blockchain
-* 
+* ./solochain-template-node --dev --base -path /tmp/blockchain
