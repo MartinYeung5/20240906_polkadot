@@ -30,3 +30,5 @@ try runtime tool usage
 kitties/src/hooks.rs
 * pre_upgrade (方法)
 * post_upgrade (方法)
+[13:26]
+判斷什麼的data要做data migration
