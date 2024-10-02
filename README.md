@@ -1,4 +1,4 @@
-# substrat notes
+# substrat notes (筆記)
 
 
 # 20240906
