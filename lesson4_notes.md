@@ -146,3 +146,4 @@ https://polkadot.js.org/apps/#/explorer?rpc=ws://localhost:9944
 (必須要執行狀態重置)
 1. rm -rf /tmp/blockchain
 2. ./target/release/solochain-template-node --dev --base-path /tmp/blockchain
+3. go to frontend 檢查
