@@ -49,3 +49,4 @@ Data migration cases
 4. x:u32 -> x:(u,16, u16) (解析出來的數據意義發生了變化)
 [20:18]
 代碼練習
+* cargo install --git https://github.com/paritytech/try-runtime-cli --locked
