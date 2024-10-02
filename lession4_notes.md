@@ -5,4 +5,5 @@ https://www.youtube.com/watch?v=78cvpTAlp_s
 
 * runtime upgrade
 * try runtime tool usage
+可以把現在的鏈的狀態導出來，然後放在本地
 * data migration
