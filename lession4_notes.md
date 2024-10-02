@@ -8,3 +8,4 @@ https://www.youtube.com/watch?v=78cvpTAlp_s
 可以把現在的鏈的狀態導出來，然後放在本地，
 或者直接連到live的鏈上，去看會不會出現什麼錯誤 (包括一些status, value)
 * data migration
+用舊數據去decode會有機會出現問題，所以有時候需要進行數據的migration
