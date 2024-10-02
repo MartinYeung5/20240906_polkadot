@@ -58,6 +58,7 @@ try-runtime --runtime ./target/release/wbuild/solochain-template-runtime/solocha
 update runtime/src/lib.rs
 [22:54]
 in lesson 3 folder, 
+(必須要執行狀態重置)
 * rm -rf /tmp/blockchain
 (起動blockchain)
 * ./solochain-template-node --dev --base -path /tmp/blockchain
@@ -71,4 +72,5 @@ update runtime/src/lib.rs
 [31:40]
 update runtime/src/lib.rs
 type Migrations = (ExampleMigration<Runtime>);
-
+[33:00]
+invalid state
