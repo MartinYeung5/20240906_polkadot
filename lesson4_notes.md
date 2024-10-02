@@ -94,6 +94,7 @@ https://polkadot.js.org/apps/#/explorer?rpc=ws://localhost:9944
 [31:40]
 update runtime/src/lib.rs
 type Migrations = (ExampleMigration<Runtime>);
+
 [33:00]
 invalid state
 (必須要執行狀態重置)
