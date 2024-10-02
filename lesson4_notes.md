@@ -72,6 +72,7 @@ https://polkadot.js.org/apps/#/explorer?rpc=ws://localhost:9944
 [23:58]
 update runtime/src/lib.rs
 1. 定義struct 
+pub struct EcampleMigration<>
 
 [31:05]
 * cargorel --features try-runtime
