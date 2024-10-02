@@ -26,3 +26,4 @@ support of upgrade
 kitties/src/
 [12:00]
 try runtime tool usage
+需要在一個定義的hook的方法做一個配合
