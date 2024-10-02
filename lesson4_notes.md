@@ -82,6 +82,7 @@ my testing
 * ./polkadot-sdk-solo-template-dev-courses --dev --base -path /tmp/blockchain
 * ./target/release/solochain-template-node --dev --tmp
 
+重要:
 in 20240927_task3
 * cd polkadot-sdk-solo-template-dev-courses
 cargo build --release
