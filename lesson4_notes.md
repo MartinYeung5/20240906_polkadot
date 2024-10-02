@@ -74,6 +74,16 @@ update runtime/src/lib.rs
 1. 定義struct 
 pub struct EcampleMigration<>
 
+[26:30]
+檢查鏈狀態:
+1. go to 
+https://polkadot.js.org/apps/#/explorer?rpc=ws://localhost:9944
+2. 選擇鏈狀態
+3. 選kitties
+4. 選nextKittyId():u32
+5. 按一下右手訪的+號
+6. 會在最下面顯示 kitties.nextKittyId():u32的最新ID
+
 [31:05]
 * cargorel --features try-runtime
 [31:40]
