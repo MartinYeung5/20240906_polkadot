@@ -17,3 +17,7 @@ runtime upgrade
 * runtime的在線升級,只是對on-chain狀態轉移一些數值，
 如果是對Client部分, 就需要升級軟件
 
+[7:35]
+support of upgrade
+1. execution in runtime
+2. on_runtime_upgrade in pallet
