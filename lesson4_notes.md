@@ -79,3 +79,4 @@ invalid state
 
 my testing
 * cargo test -p pallet-kitties
+* * ./202400927_task3 --dev --base -path /tmp/blockchain
