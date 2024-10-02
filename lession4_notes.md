@@ -46,4 +46,4 @@ Data migration cases
 1. pallet name or storage name change
 2. 存儲的數據改變
 3. x:u32 -> x:i32 (解析出來的數據意義發生了變化)
-4. 
+4. x:u32 -> x:(u,16, u16) (解析出來的數據意義發生了變化)
