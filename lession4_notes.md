@@ -32,3 +32,4 @@ kitties/src/hooks.rs
 * post_upgrade (方法)
 [13:26]
 判斷什麼的data要做data migration
+* data in KV DB
