@@ -21,4 +21,4 @@ runtime upgrade
 support of upgrade
 1. execution in runtime
 2. on_runtime_upgrade in pallet
-在lib.rs做設置
+在runtime/lib.rs做設置
