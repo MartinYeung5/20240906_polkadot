@@ -63,6 +63,12 @@ in lesson 3 folder,
 (起動blockchain)
 * ./solochain-template-node --dev --base -path /tmp/blockchain
 
+[23:10]
+go to 
+https://polkadot.js.org/apps/#/explorer?rpc=ws://localhost:9944
+
+去開發者>交易
+
 [23:58]
 update runtime/src/lib.rs
 1. 定義struct 
@@ -88,3 +94,4 @@ cargo build --release
 * ./polkadot-sdk-solo-template-dev-courses/target/release/solochain-template-node --dev --base-path /tmp/blockchain
 
 
+https://polkadot.js.org/apps/#/explorer?rpc=ws://localhost:9944
