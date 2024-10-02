@@ -33,3 +33,5 @@ kitties/src/hooks.rs
 [13:26]
 判斷什麼的data要做data migration
 * data in KV DB
+1. storage value
+2. storage map
