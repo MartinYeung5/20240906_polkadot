@@ -111,3 +111,4 @@ in 20240927_task3
 前往:
 https://polkadot.js.org/apps/#/explorer?rpc=ws://localhost:9944
 * 找不到kitties的pallet
+![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241002_3.png?raw=true)
