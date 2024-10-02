@@ -16,3 +16,4 @@ runtime upgrade
 * substrate 是第一個將runtime編譯成WASM，然後保存在鏈上
 * runtime的在線升級,只是對on-chain狀態轉移一些數值，
 如果是對Client部分, 就需要升級軟件
+
