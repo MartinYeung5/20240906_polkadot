@@ -117,3 +117,4 @@ https://polkadot.js.org/apps/#/explorer?rpc=ws://localhost:9944
 如果加上, 應該沒問題
 
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241002_4.png?raw=true)
+
