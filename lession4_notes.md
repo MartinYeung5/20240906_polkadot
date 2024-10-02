@@ -35,3 +35,6 @@ kitties/src/hooks.rs
 * data in KV DB
 1. storage value
 2. storage map
+[17:09]
+要考慮以下3個情況
+1. 不能得到之前的數據
