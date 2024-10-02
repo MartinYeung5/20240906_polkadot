@@ -113,3 +113,7 @@ https://polkadot.js.org/apps/#/explorer?rpc=ws://localhost:9944
 * 找不到kitties的pallet
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241002_3.png?raw=true)
 
+問題在於runtime/lib.rs, 看有沒有加上kitties pallet
+如果加上, 應該沒問題
+
+![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241002_4.png?raw=true)
