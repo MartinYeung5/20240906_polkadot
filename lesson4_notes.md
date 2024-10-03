@@ -117,18 +117,8 @@ my testing
 * ./polkadot-sdk-solo-template-dev-courses --dev --base-path /tmp/blockchain
 
 重要:
-### case 1
-in 20240927_task3
-在20240927_task3加入polkadot-sdk-solo-template-dev-courses folder
-* cd polkadot-sdk-solo-template-dev-courses
-cargo build --release
-* ./target/release/solochain-template-node --dev --base-path /tmp/blockchain
-* go to 
-https://polkadot.js.org/apps/#/explorer?rpc=ws://localhost:9944
-* 找不到kitties的pallet
-
-### case 2
-in 20240927_task3
+### 開始
+在項目的目錄上執行
 * cargo build --release
 成功
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241002_1.png?raw=true)
