@@ -185,11 +185,11 @@ use codec::Encode;
   error[E0599]: the function or associated item `try_runtime_upgrade` exists for struct `Executive<Runtime, Block<Header<u32, BlakeTwo256>, ...>, ..., ..., ..., ...>`, but its trait bounds were not satisfied
 ```
 
-由於出現錯誤，所以以下命令也不能執行:
+以下命令可以執行的:
 ```
 try-runtime --runtime ./target/release/wbuild/solochain-template-runtime/solochain_template_runtime.wasm on-runtime-upgrade --checks pre-and-post --disable-idempotency-checks --no-weight-warnings live --url wa://127.0.0.1:9944
 ```
-會出現以下錯誤:
+如出現以下錯誤:
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241003_1.png?raw=true)
 
 解決方法:
@@ -198,6 +198,9 @@ try-runtime --runtime ./target/release/wbuild/solochain-template-runtime/solocha
 ```
 cargo install --git https://github.com/paritytech/try-runtime-cli --locked
 ```
+正常情況之下是這樣:
+
+
 
 [36:40]
 升級步驟
