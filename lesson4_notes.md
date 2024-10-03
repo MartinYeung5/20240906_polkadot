@@ -51,6 +51,9 @@ Data migration cases
 代碼練習
 1. 安裝
 * cargo install --git https://github.com/paritytech/try-runtime-cli --locked
+執行完成後如下圖所示:
+![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241003_2.png?raw=true)
+
 
 2. 在線測試
 try-runtime --runtime ./target/release/wbuild/solochain-template-runtime/solochain_template_runtime.wasm on-runtime-upgrade --checks pre-and-post --disable-idempotency-checks --no-weight-warnings live --url wa://127.0.0.1:9944
