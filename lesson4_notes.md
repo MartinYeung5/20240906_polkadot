@@ -193,6 +193,11 @@ try-runtime --runtime ./target/release/wbuild/solochain-template-runtime/solocha
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241003_1.png?raw=true)
 
 解決方法:
+因為沒有安裝try-runtime-cli
+只要安裝完成就可以解決
+```
+cargo install --git https://github.com/paritytech/try-runtime-cli --locked
+```
 
 [36:40]
 升級步驟
