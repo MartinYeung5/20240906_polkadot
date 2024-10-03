@@ -178,6 +178,10 @@ use codec::Encode;
 * cargo build --release --features try-runtime
 如果遇到以下錯誤，
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241002_12.png?raw=true)
+```
+  error[E0599]: the function or associated item `try_runtime_upgrade` exists for struct `Executive<Runtime, Block<Header<u32, BlakeTwo256>, ...>, ..., ..., ..., ...>`, but its trait bounds were not satisfied
+```
+
 由於出現錯誤，所以以下命令也不能執行:
 ```
 try-runtime --runtime ./target/release/wbuild/solochain-template-runtime/solochain_template_runtime.wasm on-runtime-upgrade --checks pre-and-post --disable-idempotency-checks --no-weight-warnings live --url wa://127.0.0.1:9944
