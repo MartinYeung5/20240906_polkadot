@@ -217,6 +217,26 @@ note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241003_4.png?raw=true)
 
 
+執行以下命令:
+```
+try-runtime --runtime ./target/release/wbuild/solochain-template-runtime/solochain_template_runtime.wasm on-runtime-upgrade --checks pre-and-post --disable-idempotency-checks --no-weight-warnings live --url wa://127.0.0.1:9944
+```
+如出現以下錯誤:
+![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241003_5.png?raw=true)
+
+解決方式:
+```
+#[cfg(feature = "try-runtime")]
+        fn pre_upgrade() -> Result<Vec<u8>, TryRuntimeError> {
+            unimplemented!()
+        }
+
+        #[cfg(feature = "try-runtime")]
+        fn post_upgrade(_state: Vec<u8>) -> Result<(), TryRuntimeError> {
+            unimplemented!()
+        }
+```
+
 [36:40]
 升級步驟
 
@@ -230,6 +250,13 @@ update hooks.rs
 加入
 migration::migrate_to_v1::<T>()
 //Weight::default()
+
+測試:
+cargo build --release --features try-runtime
+如出現以下錯誤:
+![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241003_6.png?raw=true)
+解決方式:
+
 
 [51:45]
 update extrinsics.rs
