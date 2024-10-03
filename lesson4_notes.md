@@ -223,6 +223,7 @@ try-runtime --runtime ./target/release/wbuild/solochain-template-runtime/solocha
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241003_5.png?raw=true)
 
 解決方式:
+* 因為還沒有去hooks.rs修改pre_upgrade、post_upgrade，只要去修改相關內容就可以
 ```
 #[cfg(feature = "try-runtime")]
         fn pre_upgrade() -> Result<Vec<u8>, TryRuntimeError> {
@@ -232,6 +233,26 @@ try-runtime --runtime ./target/release/wbuild/solochain-template-runtime/solocha
         #[cfg(feature = "try-runtime")]
         fn post_upgrade(_state: Vec<u8>) -> Result<(), TryRuntimeError> {
             unimplemented!()
+        }
+```
+改成
+```
+#[cfg(feature = "try-runtime")]
+        fn pre_upgrade() -> Result<Vec<u8>, TryRuntimeError> {
+            log::info!("kitties storage pre_upgrade");
+            let kitty_id = NextKittyId::<T>::get();
+            Ok(kitty_id.encode())
+        }
+
+        #[cfg(feature = "try-runtime")]
+        fn post_upgrade(state: Vec<u8>) -> Result<(), TryRuntimeError> {
+            log::info!("kitties storage post_upgrade");
+            let kitty_id_before = u32::decode(&mut &state[..]).map_err(|_| "invalid id state")?;
+            assert!(
+                kitty_id_before == 0 || Kitties::<T>::contains_key(&kitty_id_before),
+                "invalid not include state"
+            );
+            Ok(())
         }
 ```
 
