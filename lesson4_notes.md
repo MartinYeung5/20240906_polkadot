@@ -213,6 +213,7 @@ note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 2. 在[features], try-runtime
 加入"pallet-insecure-randomness-collective-flip/try-runtime",
 
+* cargo build --release --features try-runtime
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241003_4.png?raw=true)
 
 
