@@ -256,6 +256,9 @@ cargo build --release --features try-runtime
 如出現以下錯誤:
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241003_6.png?raw=true)
 解決方式:
+* 更新lib.rs
+加入
+pub mod migration;
 
 
 [51:45]
