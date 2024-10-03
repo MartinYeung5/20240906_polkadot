@@ -199,6 +199,7 @@ try-runtime --runtime ./target/release/wbuild/solochain-template-runtime/solocha
 cargo install --git https://github.com/paritytech/try-runtime-cli --locked
 ```
 正常情況之下是這樣:
+![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241003_3.png?raw=true)
 
 
 
