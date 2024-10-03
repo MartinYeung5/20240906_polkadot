@@ -195,3 +195,4 @@ migration::migrate_to_v1::<T>()
 //Weight::default()
 
 [51:45]
+update extrinsics.rs
