@@ -116,7 +116,7 @@ in 20240927_task3
 在20240927_task3加入polkadot-sdk-solo-template-dev-courses folder
 * cd polkadot-sdk-solo-template-dev-courses
 cargo build --release
-* ./polkadot-sdk-solo-template-dev-courses/target/release/solochain-template-node --dev --base-path /tmp/blockchain
+* ./target/release/solochain-template-node --dev --base-path /tmp/blockchain
 * go to 
 https://polkadot.js.org/apps/#/explorer?rpc=ws://localhost:9944
 * 找不到kitties的pallet
@@ -200,6 +200,12 @@ cargo install --git https://github.com/paritytech/try-runtime-cli --locked
 ```
 正常情況之下是這樣:
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241003_3.png?raw=true)
+但仍有錯誤:
+```
+thread 'main' panicked at cli/main.rs:326:10:
+called `Result::unwrap()` on an `Err` value: Input("Given runtime is not compiled with the try-runtime feature.")
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+```
 
 
 
