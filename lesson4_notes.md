@@ -15,12 +15,13 @@ runtime upgrade
 * 升級代碼是軟件開發經常遇到的事
 * substrate 是第一個將runtime編譯成WASM，然後保存在鏈上
 * runtime的在線升級,只是對on-chain狀態轉移一些數值，
+
 如果是對Client部分, 就需要升級軟件
 
 [7:35]
 support of upgrade
 1. execution in runtime
-在runtime/src/lib.rs做設置, 通過修改Migrations 和 fn on_runtime_upgrade
+* 在runtime/src/lib.rs做設置, 通過修改Migrations 和 fn on_runtime_upgrade
 
 [11:20]
 2. on_runtime_upgrade in pallet
