@@ -206,7 +206,14 @@ thread 'main' panicked at cli/main.rs:326:10:
 called `Result::unwrap()` on an `Err` value: Input("Given runtime is not compiled with the try-runtime feature.")
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 ```
+解決方法:
+* 更新runtime/Cargo.toml
+1. 在[features], std內:
+加入"pallet-insecure-randomness-collective-flip/std",
+2. 在[features], try-runtime
+加入"pallet-insecure-randomness-collective-flip/try-runtime",
 
+![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241003_4.png?raw=true)
 
 
 [36:40]
