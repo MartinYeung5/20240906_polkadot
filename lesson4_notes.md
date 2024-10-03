@@ -21,20 +21,24 @@ runtime upgrade
 support of upgrade
 1. execution in runtime
 在runtime/src/lib.rs做設置, 通過修改Migrations 和 fn on_runtime_upgrade
+
 [11:20]
 2. on_runtime_upgrade in pallet
 kitties/src/
+
 [12:00]
 try runtime tool usage
 需要在一個定義的hook的方法做一個配合
 kitties/src/hooks.rs
 * pre_upgrade (方法)
 * post_upgrade (方法)
+
 [13:26]
 判斷什麼的data要做data migration
 * data in KV DB
 1. storage value
 2. storage map
+
 [17:09]
 要考慮以下3個情況
 1. 不能得到之前的數據
@@ -47,6 +51,7 @@ Data migration cases
 2. 存儲的數據改變
 3. x:u32 -> x:i32 (解析出來的數據意義發生了變化)
 4. x:u32 -> x:(u,16, u16) (解析出來的數據意義發生了變化)
+
 [20:18]
 代碼練習
 1. 安裝
@@ -59,6 +64,7 @@ Data migration cases
 try-runtime --runtime ./target/release/wbuild/solochain-template-runtime/solochain_template_runtime.wasm on-runtime-upgrade --checks pre-and-post --disable-idempotency-checks --no-weight-warnings live --uri ws://127.0.0.1:9944
 
 update runtime/src/lib.rs
+
 [22:54]
 in lesson 3 folder, 
 (必須要執行狀態重置)
@@ -152,6 +158,7 @@ https://polkadot.js.org/apps/#/explorer?rpc=ws://localhost:9944
 (必須要執行狀態重置)
 1. rm -rf /tmp/blockchain
 2. ./target/release/solochain-template-node --dev --base-path /tmp/blockchain
+
 [34:50]
 3. go to frontend 檢查
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241002_8.png?raw=true)
@@ -245,6 +252,7 @@ try-runtime --runtime ./target/release/wbuild/solochain-template-runtime/solocha
 
 [41:00]
 創建migration.rs
+
 [50:25]
 update hooks.rs
 加入
@@ -258,8 +266,9 @@ cargo build --release --features try-runtime
 解決方式:
 * 更新lib.rs
 加入
+```
 pub mod migration;
-
+```
 
 [51:45]
 update extrinsics.rs
