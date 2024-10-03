@@ -207,3 +207,6 @@ migration::migrate_to_v1::<T>()
 
 [51:45]
 update extrinsics.rs
+
+[55:00]
+upload 新的.wasm
