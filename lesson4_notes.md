@@ -330,6 +330,7 @@ called `Result::unwrap()` on an `Err` value: Input("New runtime spec version mus
 
 
 
+
 升級成功後，鏈狀態會清零
 
 ### case2
