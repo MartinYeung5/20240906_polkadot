@@ -326,6 +326,7 @@ called `Result::unwrap()` on an `Err` value: Input("New runtime spec version mus
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241004_5.png?raw=true)
 
 5. 創建kitties - 提交交易
+![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241004_6.png?raw=true)
 
 升級成功後，鏈狀態會清零
 
