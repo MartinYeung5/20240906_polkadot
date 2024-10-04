@@ -343,7 +343,7 @@ called `Result::unwrap()` on an `Err` value: Input("New runtime spec version mus
 10. 更新wasm - 確認上傳
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241004_11.png?raw=true)
 
-
+11. 
 
 升級成功後，鏈狀態會清零
 
