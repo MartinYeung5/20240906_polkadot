@@ -296,4 +296,6 @@ upload 新的.wasm
 https://docs.substrate.io/reference/how-to-guides/tools/use-try-runtime/
 
 ### case 1
+[34:20]
+重新起動區塊鏈
 1. 
