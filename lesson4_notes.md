@@ -186,7 +186,8 @@ use codec::Encode;
 
 以下命令可以執行的:
 ```
-try-runtime --runtime ./target/release/wbuild/solochain-template-runtime/solochain_template_runtime.wasm on-runtime-upgrade --checks pre-and-post --disable-idempotency-checks --no-weight-warnings live --url wa://127.0.0.1:9944
+try-runtime --runtime ./target/release/wbuild/solochain-template-runtime/solochain_template_runtime.wasm on-runtime-upgrade --checks pre-and-post --disable-idempotency-checks --no-weight-warnings live --uri ws://127.0.0.1:9944
+
 ```
 如出現以下錯誤:
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241003_1.png?raw=true)
@@ -288,3 +289,8 @@ update extrinsics.rs
 
 [55:00]
 upload 新的.wasm
+
+
+* 官方網頁
+1. Use try-runtime (outdated?)
+https://docs.substrate.io/reference/how-to-guides/tools/use-try-runtime/
