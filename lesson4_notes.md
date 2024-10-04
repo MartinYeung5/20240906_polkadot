@@ -294,3 +294,6 @@ upload 新的.wasm
 * 官方網頁
 1. Use try-runtime (outdated?)
 https://docs.substrate.io/reference/how-to-guides/tools/use-try-runtime/
+
+### case 1
+1. 
