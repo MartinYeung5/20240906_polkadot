@@ -296,6 +296,18 @@ upload 新的.wasm
 https://docs.substrate.io/reference/how-to-guides/tools/use-try-runtime/
 
 ### case 1
-[34:20]
+[34:00]
 重新起動區塊鏈
+升級前必須清除所有數據
 1. 
+try-runtime --runtime ./target/release/wbuild/solochain-template-runtime/solochain_template_runtime.wasm on-runtime-upgrade --checks pre-and-post --disable-idempotency-checks --no-weight-warnings live --uri ws://127.0.0.1:9944
+
+```
+thread 'main' panicked at cli/main.rs:326:10:
+called `Result::unwrap()` on an `Err` value: Input("New runtime spec version must be greater than the on-chain runtime spec version. Use `--disable-spec-version-check` to disable this check.")
+```
+
+正確步驟:
+1. cargo build --release --features try-runtime
+![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241004_1.png?raw=true)
+2. try-runtime --runtime ./target/release/wbuild/solochain-template-runtime/solochain_template_runtime.wasm on-runtime-upgrade --checks pre-and-post --disable-idempotency-checks --no-weight-warnings live --uri ws://127.0.0.1:9944
