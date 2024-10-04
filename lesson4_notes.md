@@ -311,3 +311,4 @@ called `Result::unwrap()` on an `Err` value: Input("New runtime spec version mus
 1. cargo build --release --features try-runtime
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241004_1.png?raw=true)
 2. try-runtime --runtime ./target/release/wbuild/solochain-template-runtime/solochain_template_runtime.wasm on-runtime-upgrade --checks pre-and-post --disable-idempotency-checks --no-weight-warnings live --uri ws://127.0.0.1:9944
+![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241004_2.png?raw=true)
