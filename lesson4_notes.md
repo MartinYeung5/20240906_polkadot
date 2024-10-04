@@ -356,3 +356,6 @@ called `Result::unwrap()` on an `Err` value: Input("New runtime spec version mus
 
 14. 成功進行migration
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241004_15.png?raw=true)
+
+15. 取到最近的Dot價格，並在拍賣成功Event事件中，顯示Kitty美元價格
+![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241004_16.png?raw=true)
