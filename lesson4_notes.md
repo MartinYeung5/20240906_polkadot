@@ -306,6 +306,7 @@ try-runtime --runtime ./target/release/wbuild/solochain-template-runtime/solocha
 thread 'main' panicked at cli/main.rs:326:10:
 called `Result::unwrap()` on an `Err` value: Input("New runtime spec version must be greater than the on-chain runtime spec version. Use `--disable-spec-version-check` to disable this check.")
 ```
+![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241004_3.png?raw=true)
 
 ### case 1
 正確步驟:
