@@ -308,8 +308,7 @@ called `Result::unwrap()` on an `Err` value: Input("New runtime spec version mus
 ```
 
 正確步驟:
-0. 準備
-* 重新起動區塊鏈
+0. 準備 
 * 升級前必須清除所有數據 (rm -rf /tmp/blockchain)
 
 1. cargo build --release --features try-runtime
