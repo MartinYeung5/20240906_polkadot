@@ -334,7 +334,7 @@ called `Result::unwrap()` on an `Err` value: Input("New runtime spec version mus
 7. 創建kitties - 檢查是否有新kitty
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241004_8.png?raw=true)
 
-
+8. 
 
 
 升級成功後，鏈狀態會清零
