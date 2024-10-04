@@ -297,16 +297,17 @@ https://docs.substrate.io/reference/how-to-guides/tools/use-try-runtime/
 
 ### case 1
 [34:00]
-重新起動區塊鏈
-升級前必須清除所有數據
-1. 
+如果沒有 執行 cargo build --release --features try-runtime
+* 只執行以下命令，會報錯
 try-runtime --runtime ./target/release/wbuild/solochain-template-runtime/solochain_template_runtime.wasm on-runtime-upgrade --checks pre-and-post --disable-idempotency-checks --no-weight-warnings live --uri ws://127.0.0.1:9944
 
+* 錯誤:
 ```
 thread 'main' panicked at cli/main.rs:326:10:
 called `Result::unwrap()` on an `Err` value: Input("New runtime spec version must be greater than the on-chain runtime spec version. Use `--disable-spec-version-check` to disable this check.")
 ```
 
+### case 1
 正確步驟:
 0. 準備 
 * 升級前必須清除所有數據 (rm -rf /tmp/blockchain)
