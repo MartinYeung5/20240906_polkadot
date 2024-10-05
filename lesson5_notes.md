@@ -255,6 +255,8 @@ https://github.com/papermoonio/polkadot-sdk-course-code/tree/main/advance/lesson
 
 cargo build --package parachain-template-node --release
 * 有錯誤:
+![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241005_2.png?raw=true)
+
 Cannot compile the WASM runtime: the `wasm32-unknown-unknown` target is not installed!
   You can install it with `rustup target add wasm32-unknown-unknown --toolchain stable-x86_64-unknown-linux-gnu` if you're using `rustup`.
 
