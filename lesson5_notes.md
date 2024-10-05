@@ -147,3 +147,4 @@ asset.rs
 * 指令是它的origin, holdings
 * XCM message is collecyion of XCVM instructions
 * XCVM is a status machine, state is kept in registers.
+
