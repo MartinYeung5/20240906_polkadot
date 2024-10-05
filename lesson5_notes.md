@@ -20,4 +20,4 @@
 2. 其他解決方法
 * L1, L2 OP, ZK Rollup, AppChain,
 
-polkadot協議: 有relaychain統一負責 (例如: polkadot)，有自己的節點可以來驗證區塊1=
+polkadot協議: 有relaychain統一負責 (例如: polkadot)，有自己的節點可以來驗證區塊
