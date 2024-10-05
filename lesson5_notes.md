@@ -188,3 +188,6 @@ XCVM instruction
 
 [47:55]
 XCM pallets
+
+[52:00]
+代碼解釋:
