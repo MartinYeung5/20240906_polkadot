@@ -212,3 +212,6 @@ XCM pallets
 
 [58:00]
 xcm/xcm-executor/src/lib.rs
+
+[58:26]
+fn reserve_transfer_assets (轉移資產)
