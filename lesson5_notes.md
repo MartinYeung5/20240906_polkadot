@@ -191,3 +191,4 @@ XCM pallets
 
 [52:00]
 代碼解釋:
+* pub struct XcmExecutor
