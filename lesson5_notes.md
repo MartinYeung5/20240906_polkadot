@@ -198,4 +198,4 @@ XCM pallets
 * fn execute
 
 [55:15]
-* frame/auara/lib.rs
+* substrate/frame/auara/lib.rs
