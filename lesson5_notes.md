@@ -36,3 +36,4 @@ polkadot協議: 有relaychain統一負責 (例如: polkadot)，有自己的節�
 
 [11:50]
 polkadot 提升
+1. security: protocal 在 relaychain高效驗證，validators輪換
