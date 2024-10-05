@@ -38,6 +38,5 @@ polkadot協議: 有relaychain統一負責 (例如: polkadot)，有自己的節�
 polkadot 提升
 1. security: protocal 在 relaychain高效驗證，validators輪換
 2. Scalability: parachain TPS and relaychain 驗證能力
+* relaychain 驗證能力 會影響到parachain的TPS
 3. decentralization: validators, nominators and tokenomics in relaychain
-
-relaychain 驗證能力 會影響到parachain的TPS
