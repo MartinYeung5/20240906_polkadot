@@ -16,4 +16,4 @@
 * scalability: parachain
 * decentralization: validators DPoS
 
-
+交易處理, 打包都需要區塊鏈驗證
