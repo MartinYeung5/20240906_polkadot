@@ -52,7 +52,7 @@ polkadot 提升
 [17:20]
 有4個A
 1. Agnostic: 沒有對共識系統的實現做任何假設
-* 例如: in XCM 的資產, 就只有一個資產id
+* 例如: in XCM 的資產, 就只有一個資產id, 不會判斷資產是erc20或者是parachain上native的資產
 2. Absolute: 有一個能保證消息發送, 正確的解析和順序
 3. Asynchronous:消息是異步，不會block某個消息
 4. Asymmetric: (不對稱的)
