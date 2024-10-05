@@ -148,3 +148,5 @@ asset.rs
 * XCM message is collecyion of XCVM instructions
 * XCVM is a status machine, state is kept in registers.
 
+[35:48]
+XCVM instruction
