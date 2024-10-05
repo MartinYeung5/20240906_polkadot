@@ -54,4 +54,4 @@ polkadot 提升
 1. Agnostic: 沒有對共識系統的實現做任何假設
 2. Absolute: 
 3. Asynchronous:
-4. Asymmetric
+4. Asymmetric: (不對稱的)
