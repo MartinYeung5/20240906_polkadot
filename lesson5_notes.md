@@ -145,4 +145,4 @@ asset.rs
 [35:00]
 * XCVM registers
 * 指令是它的origin, holdings
-
+* 
