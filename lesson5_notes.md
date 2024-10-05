@@ -178,3 +178,6 @@ XCVM instruction
 
 [43:20]
 2. Reserve asset transfers
+
+[45:00]
+* example: parachain native tokens
