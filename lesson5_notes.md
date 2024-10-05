@@ -39,3 +39,4 @@ polkadot 提升
 1. security: protocal 在 relaychain高效驗證，validators輪換
 2. Scalability: parachain TPS and relaychain 驗證能力
 3. decentralization: validators, nominators and tokenomics in relaychain
+
