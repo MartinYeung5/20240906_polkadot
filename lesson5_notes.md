@@ -79,4 +79,5 @@ Asset
 [26:00]
 代碼解釋
 * 可以在pokadot-sdk下找到
+https://github.com/paritytech/polkadot-sdk
 
