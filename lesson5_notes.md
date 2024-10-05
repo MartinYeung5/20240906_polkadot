@@ -17,5 +17,6 @@
 * scalability: parachain
 * decentralization: validators DPoS
 
-交易處理，打包都需要區塊鏈驗證，
+2. 其他解決方法
+* L1, L2 OP, ZK Rollup, AppChain,
 
