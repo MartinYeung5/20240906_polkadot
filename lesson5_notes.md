@@ -305,6 +305,8 @@ rustup component add rust-src --toolchain stable-x86_64-unknown-linux-gnu
 
 * Alice 節點
 * https://polkadot.js.org/apps/?rpc=ws://127.0.0.1:9944#/explorer    
+![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241005_9.png?raw=true)
+
 
 * Bob 節點
 * https://polkadot.js.org/apps/?rpc=ws://127.0.0.1:9955#/explorer    
