@@ -30,4 +30,4 @@ polkadot協議: 有relaychain統一負責 (例如: polkadot)，有自己的節�
 * 把做抉擇的權利分散
 
 * ZK Rollup 需要大量算力，存儲十分大
-* 
+* Appchain, 每條鏈都有自己的安全機制，
