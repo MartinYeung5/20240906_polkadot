@@ -40,3 +40,4 @@ polkadot 提升
 2. Scalability: parachain TPS and relaychain 驗證能力
 3. decentralization: validators, nominators and tokenomics in relaychain
 
+relaychain 驗證能力 會影響到parachain的TPS
