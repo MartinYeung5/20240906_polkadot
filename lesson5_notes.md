@@ -55,3 +55,4 @@ polkadot 提升
 2. Absolute: 
 3. Asynchronous:
 4. Asymmetric: (不對稱的)
+
