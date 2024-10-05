@@ -62,6 +62,6 @@ polkadot 提升
 
 [22:20]
 * Location
-
+* 每個location is struct, each location will have junction
 
 
