@@ -53,6 +53,6 @@ polkadot 提升
 有4個A
 1. Agnostic: 沒有對共識系統的實現做任何假設
 2. Absolute: 有一個能保證消息發送, 正確的解析和順序
-3. Asynchronous:
+3. Asynchronous:消息是異步，不會block某個消息
 4. Asymmetric: (不對稱的)
 
