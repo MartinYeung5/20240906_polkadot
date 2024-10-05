@@ -11,4 +11,6 @@
 * parachain & relaychain
 
 有3個特性
-1. 
+1. 不可能三角
+* security: relaychain
+* scalability: parachain
