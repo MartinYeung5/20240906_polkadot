@@ -191,6 +191,7 @@ XCM pallets
 
 [52:00]
 代碼解釋:
+* xcm/xcm-executor/src/lib.rs
 * pub struct XcmExecutor
 
 [54:00]
