@@ -168,4 +168,4 @@ XCVM instruction
 
 [39:00]
 * XCVM operation
-
+首先會有Registers :Registers 內有origins + holding (當前是空的)
