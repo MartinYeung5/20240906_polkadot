@@ -150,3 +150,7 @@ asset.rs
 
 [35:48]
 XCVM instruction
+* command
+* trusted indiction
+* information
+* system notification
