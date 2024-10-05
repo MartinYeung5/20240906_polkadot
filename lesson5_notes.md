@@ -74,3 +74,4 @@ polkadot 提升
 
 [24:50]
 Asset
+* asset 最重要的是會包含一個location
