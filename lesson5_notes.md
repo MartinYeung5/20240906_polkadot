@@ -71,3 +71,6 @@ polkadot 提升
 1. relay
 2. parachain
 3. account or pallet or contracts
+
+[24:50]
+Asset
