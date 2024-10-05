@@ -293,10 +293,9 @@ rustup component add rust-src --toolchain stable-x86_64-unknown-linux-gnu
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ```
 
-
 解決方式:
 * zombienet setup polkadot polkadot-parachain
 
-
+* 如果未能成功執行，應該去 zombienet.toml 再看看各路徑是不是正確
 
 ./target/release/parachain-template-node --dev --base-path /tmp/blockchain
