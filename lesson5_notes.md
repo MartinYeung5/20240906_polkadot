@@ -57,4 +57,5 @@ polkadot 提升
 3. Asynchronous:消息是異步，不會在某個地方block某個消息
 4. Asymmetric: (不對稱的) 消息是不對稱的，消息不會保證有回覆/或者確認，除非有顯式的要求
 
-
+[21:18]
+* XCM location & asset
