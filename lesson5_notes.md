@@ -232,7 +232,7 @@ xcm/xcm-executor/src/lib.rs
 * 跟已經配置好的target chain發消息
 
 [1:10:20]
-* ZombiNet
+* ZombieNet
 * 創建一個有relaychain + parachain環境
 
 [1:14:00]
