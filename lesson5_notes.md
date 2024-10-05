@@ -206,5 +206,5 @@ XCM pallets
 (與共識相關的pallet)
 
 [57:20]
-* pallet-aura
-* cumulus_pallet_aura_Ext
+* pallet_aura
+* cumulus_pallet_aura_ext
