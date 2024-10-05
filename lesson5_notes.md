@@ -246,3 +246,5 @@ https://github.com/papermoonio/polkadot-sdk-course-code/tree/main/advance/lesson
 
 * reference
 * https://github.com/paritytech/zombienet
+
+* npm i @zombienet/cli -g
