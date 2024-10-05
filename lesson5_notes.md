@@ -250,3 +250,31 @@ https://github.com/papermoonio/polkadot-sdk-course-code/tree/main/advance/lesson
 
 
 * npm i @zombienet/cli -g
+
+
+cargo build --package parachain-template-node --release
+* 有錯誤:
+Cannot compile the WASM runtime: the `wasm32-unknown-unknown` target is not installed!
+  You can install it with `rustup target add wasm32-unknown-unknown --toolchain stable-x86_64-unknown-linux-gnu` if you're using `rustup`.
+
+* 解決:
+* rustup target add wasm32-unknown-unknown --toolchain stable-x86_64-unknown-linux-gnu
+
+
+
+cargo build --package parachain-template-node --release
+* 有錯誤:
+error: failed to run custom build command for `rococo-runtime v17.0.0`
+
+Caused by:
+  process didn't exit successfully: `/root/substrate/lesson-5/target/release/build/rococo-runtime-1a0e5b8df0e4a948/build-script-build` (exit status: 1)
+  --- stderr
+  Cannot compile the WASM runtime: no standard library sources found at /root/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust!
+  You can install them with `rustup component add rust-src --toolchain stable-x86_64-unknown-linux-gnu` if you're using `rustup`.
+
+* 解決:
+rustup component add rust-src --toolchain stable-x86_64-unknown-linux-gnu
+
+
+
+zombienet --provider native spawn ./zombienet.toml
