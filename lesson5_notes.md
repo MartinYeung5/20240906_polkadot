@@ -139,5 +139,5 @@ asset.rs
 2. DMP
 3. XCMP
 4. HRMP
-* relaychain:
+* relaychain: UMP & HRMP
 parachain:
