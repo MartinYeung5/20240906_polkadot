@@ -142,6 +142,7 @@ asset.rs
 * relaychain: UMP & HRMP
 * parachain: DMP & XCMP
 
-
+[35:00]
+* XCVM registers
 
 
