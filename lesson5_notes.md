@@ -117,4 +117,5 @@ AccountIndex64 {
 		#[codec(compact)]
 		index: u64,
 	},
+AccountKey20 { network: Option<NetworkId>, key: [u8; 20] },
 ```
