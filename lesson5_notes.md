@@ -57,3 +57,4 @@ polkadot 提升
 3. Asynchronous:消息是異步，不會block某個消息
 4. Asymmetric: (不對稱的) 消息是不對稱的，不會保證有回覆，除非有顯式的要求?
 
+
