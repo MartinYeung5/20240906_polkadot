@@ -182,3 +182,5 @@ XCVM instruction
 [45:00]
 * example: parachain native tokens
 
+[46:00]
+* XCM 組成 
