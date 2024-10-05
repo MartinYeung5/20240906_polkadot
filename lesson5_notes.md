@@ -238,6 +238,9 @@ xcm/xcm-executor/src/lib.rs
 [1:14:00]
 * zombinet.toml
 
+[1:!6:10]
+zombinet --provider natice spawn ./zombinet.tome
+
 * lesson5:
 https://github.com/papermoonio/polkadot-sdk-course-code/tree/main/advance/lesson-5
 
