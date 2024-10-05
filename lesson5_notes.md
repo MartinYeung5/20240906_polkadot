@@ -133,3 +133,6 @@ asset.rs
 * XCVM
 * 它是處理XCM消息的虛擬機，基於寄存器的
 * message是一個指令序列
+
+* messages:
+1. UMP
