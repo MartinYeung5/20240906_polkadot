@@ -301,6 +301,7 @@ rustup component add rust-src --toolchain stable-x86_64-unknown-linux-gnu
 * 如果未能成功執行，應該去 zombienet.toml 再看看各路徑是不是正確
 
 * 成功:
+![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241005_8.png?raw=true)
 
 
 ./target/release/parachain-template-node --dev --base-path /tmp/blockchain
