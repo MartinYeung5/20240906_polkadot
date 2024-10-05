@@ -166,3 +166,5 @@ XCVM instruction
 * example: QueryResopnse
 * 向對方report information, 之後可以獲得一個回覆
 
+[39:00]
+* XCVM operation
