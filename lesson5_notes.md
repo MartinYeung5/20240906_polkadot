@@ -108,3 +108,13 @@ pub enum Junctions {
 ```
 
 * junction 也是一個enum
+```
+Parachain(#[codec(compact)] u32),
+respected as a sovereign
+AccountId32 { network: Option<NetworkId>, id: [u8; 32] },
+AccountIndex64 {
+		network: Option<NetworkId>,
+		#[codec(compact)]
+		index: u64,
+	},
+```
