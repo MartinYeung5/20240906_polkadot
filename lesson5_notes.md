@@ -82,7 +82,7 @@ Asset
 https://github.com/paritytech/polkadot-sdk
 
 [27:20]
-* junction是一個數組，在外面有一個enum
+* junctions是一個數組，在外面有一個enum
 
 ```
 pub enum Junctions {
