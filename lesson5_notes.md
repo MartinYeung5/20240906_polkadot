@@ -238,4 +238,6 @@ xcm/xcm-executor/src/lib.rs
 [1:14:00]
 * zombinet.toml
 
+* lesson5:
+https://github.com/papermoonio/polkadot-sdk-course-code/tree/main/advance/lesson-5
 
