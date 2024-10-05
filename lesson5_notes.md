@@ -219,3 +219,4 @@ xcm/xcm-executor/src/lib.rs
 
 [59:10]
 * 定義origins
+* cumulus/pallets/xcm/src/lib.rs
