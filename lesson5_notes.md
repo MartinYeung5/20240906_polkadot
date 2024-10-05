@@ -280,7 +280,7 @@ Caused by:
 
 * 解決:
 rustup component add rust-src --toolchain stable-x86_64-unknown-linux-gnu
-1[alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241005_5.png?raw=true)
+![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241005_5.png?raw=true)
 
 
 zombienet --provider native spawn ./zombienet.toml
