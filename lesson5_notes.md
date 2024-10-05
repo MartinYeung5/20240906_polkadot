@@ -53,5 +53,5 @@ polkadot 提升
 有4個A
 1. Agnostic: 沒有對共識系統的實現做任何假設
 2. Absolute: 
-3. 
+3. Asynchronous:
 
