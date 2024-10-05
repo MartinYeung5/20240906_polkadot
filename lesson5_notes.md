@@ -215,4 +215,4 @@ xcm/xcm-executor/src/lib.rs
 
 [58:26]
 * fn reserve_transfer_assets (轉移資產)
-fn force_xcm_version (xcm版本處理)
+* fn force_xcm_version (xcm版本處理)
