@@ -22,4 +22,8 @@
 
 polkadot協議: 有relaychain統一負責 (例如: polkadot)，有自己的節點可以來驗證區塊，
 還會驗證parachain所產生的block。
+
+[5:00]
 * 把安仕放到relaychain
+[5:25]
+涉及到大量業務就會放到parachain
