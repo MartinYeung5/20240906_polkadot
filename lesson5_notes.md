@@ -286,5 +286,10 @@ rustup component add rust-src --toolchain stable-x86_64-unknown-linux-gnu
 * zombienet --provider native spawn ./zombienet.toml
 有錯誤:
 
+
 解決方式:
 * zombienet setup polkadot polkadot-parachain
+
+
+
+./target/release/parachain-template-node --dev --base-path /tmp/blockchain
