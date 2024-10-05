@@ -84,3 +84,25 @@ https://github.com/paritytech/polkadot-sdk
 [27:20]
 * junction是一個數組，在外面有一個enum
 
+```
+pub enum Junctions {
+	/// The interpreting consensus system.
+	Here,
+	/// A relative path comprising 1 junction.
+	X1(Arc<[Junction; 1]>),
+	/// A relative path comprising 2 junctions.
+	X2(Arc<[Junction; 2]>),
+	/// A relative path comprising 3 junctions.
+	X3(Arc<[Junction; 3]>),
+	/// A relative path comprising 4 junctions.
+	X4(Arc<[Junction; 4]>),
+	/// A relative path comprising 5 junctions.
+	X5(Arc<[Junction; 5]>),
+	/// A relative path comprising 6 junctions.
+	X6(Arc<[Junction; 6]>),
+	/// A relative path comprising 7 junctions.
+	X7(Arc<[Junction; 7]>),
+	/// A relative path comprising 8 junctions.
+	X8(Arc<[Junction; 8]>),
+}
+```
