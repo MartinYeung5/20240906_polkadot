@@ -51,5 +51,5 @@ polkadot 提升
 
 [17:20]
 有4個A
-
+1. Agnostic: 沒有對共識
 
