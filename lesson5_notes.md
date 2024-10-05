@@ -168,4 +168,4 @@ XCVM instruction
 
 [39:00]
 * XCVM operation
-首先會有Registers :Registers 內有origins + holding (當前是空的)，會有一個executor來進行fetch動作
+首先會有Registers :Registers 內有origins + holding (當前是空的)，會有一個executor來進行fetch動作，之後就會去到"program"
