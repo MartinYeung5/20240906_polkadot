@@ -246,5 +246,7 @@ https://github.com/papermoonio/polkadot-sdk-course-code/tree/main/advance/lesson
 
 * reference
 * https://github.com/paritytech/zombienet
+* https://paritytech.github.io/zombienet/network-definition-spec.html
+
 
 * npm i @zombienet/cli -g
