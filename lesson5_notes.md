@@ -186,3 +186,5 @@ XCVM instruction
 * XCM 組成 
 * 每個步驟都會通過一個instruction定義
 
+[47:55]
+XCM pallets
