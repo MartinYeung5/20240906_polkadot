@@ -16,3 +16,4 @@
 * scalability: parachain
 * decentralization: validators DPoS
 
+
