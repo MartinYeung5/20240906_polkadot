@@ -2,4 +2,4 @@
 
 ### 重點
 * XCM
-* pa
+* parachain
