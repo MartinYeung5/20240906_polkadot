@@ -15,3 +15,4 @@
 * security: relaychain
 * scalability: parachain
 * decentralization: validators DPoS
+
