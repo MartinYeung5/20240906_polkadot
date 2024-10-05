@@ -312,4 +312,3 @@ rustup component add rust-src --toolchain stable-x86_64-unknown-linux-gnu
 * Charlie 節點
 * https://polkadot.js.org/apps/?rpc=ws://127.0.0.1:9988#/explorer    
 
-./target/release/parachain-template-node --dev --base-path /tmp/blockchain
