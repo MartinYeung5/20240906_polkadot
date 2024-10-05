@@ -66,3 +66,4 @@ polkadot 提升
 
 * universal location: 類似根目錄
 
+[24:26]
