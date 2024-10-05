@@ -14,3 +14,4 @@
 1. 不可能三角
 * security: relaychain
 * scalability: parachain
+* decentralization: validators DPoS
