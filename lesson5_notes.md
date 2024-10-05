@@ -13,6 +13,7 @@
 有3個特性
 1. 不可能三角
 * security: relaychain
+交易處理，打包都需要區塊鏈驗證
 * scalability: parachain
 * decentralization: validators DPoS
 
