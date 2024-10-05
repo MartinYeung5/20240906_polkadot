@@ -136,3 +136,6 @@ asset.rs
 
 * messages:
 1. UMP
+2. DMP
+3. 
+4. 
