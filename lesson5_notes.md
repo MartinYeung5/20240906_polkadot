@@ -267,6 +267,7 @@ Cannot compile the WASM runtime: the `wasm32-unknown-unknown` target is not inst
 
 * cargo build --package parachain-template-node --release
 * 有錯誤:
+
 error: failed to run custom build command for `rococo-runtime v17.0.0`
 
 Caused by:
