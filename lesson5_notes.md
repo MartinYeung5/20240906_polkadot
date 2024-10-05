@@ -81,5 +81,6 @@ Asset
 * 可以在pokadot-sdk下找到
 https://github.com/paritytech/polkadot-sdk
 
-
+[27:20]
+* junction是一個數組，在外面有一個enum
 
