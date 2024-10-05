@@ -130,3 +130,4 @@ GlobalConsensus(NetworkId),
 asset.rs
 
 [30:16]
+* XCVM
