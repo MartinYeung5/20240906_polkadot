@@ -175,3 +175,4 @@ XCVM instruction
 3. BuyExecution 可以獲得手續費 (需要與Exector互動,執行fetch)
 4. DepositAsset (需要與Exector互動,執行fetch), 去holding get asset
 5. 如果順利完成, 會put aaset 去 Beneficiary
+
