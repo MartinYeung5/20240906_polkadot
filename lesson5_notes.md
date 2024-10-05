@@ -295,6 +295,7 @@ rustup component add rust-src --toolchain stable-x86_64-unknown-linux-gnu
 
 解決方式:
 * zombienet setup polkadot polkadot-parachain
+![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241005_7.png?raw=true)
 
 * 如果未能成功執行，應該去 zombienet.toml 再看看各路徑是不是正確
 
