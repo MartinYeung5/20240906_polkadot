@@ -226,4 +226,4 @@ xcm/xcm-executor/src/lib.rs
 * cumulus/pallets/xcmp-queue/src/lib.rs
 
 [1:03:30]
-* cumulus/pallets/xcmp-queue/src/lib.rs
+* cumulus/parachains/pallets/ping/src/lib.rs
