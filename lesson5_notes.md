@@ -240,7 +240,6 @@ xcm/xcm-executor/src/lib.rs
 
 [1:!6:10]
 * zombinet --provider natice spawn ./zombinet.tome
-![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241005_1.png?raw=true)
 
 * lesson5:
 https://github.com/papermoonio/polkadot-sdk-course-code/tree/main/advance/lesson-5
@@ -251,6 +250,7 @@ https://github.com/papermoonio/polkadot-sdk-course-code/tree/main/advance/lesson
 
 
 * npm i @zombienet/cli -g
+![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241005_1.png?raw=true)
 
 
 cargo build --package parachain-template-node --release
