@@ -227,3 +227,4 @@ xcm/xcm-executor/src/lib.rs
 
 [1:03:30]
 * cumulus/parachains/pallets/ping/src/lib.rs
+* 在兩個不同的鏈，可以互發消息, 有來有往
