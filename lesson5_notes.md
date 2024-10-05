@@ -119,5 +119,9 @@ AccountIndex64 {
 	},
 AccountKey20 { network: Option<NetworkId>, key: [u8; 20] },
 PalletInstance(u8),
-
+GeneralIndex(#[codec(compact)] u128),
+GeneralKey { length: u8, data: [u8; 32] },
+OnlyChild,
+Plurality { id: BodyId, part: BodyPart },
+GlobalConsensus(NetworkId),
 ```
