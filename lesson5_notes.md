@@ -232,4 +232,4 @@ xcm/xcm-executor/src/lib.rs
 * 跟已經配置好的target chain發消息
 
 [1:10:20]
-* Zombinet
+* ZombiNet
