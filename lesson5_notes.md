@@ -8,3 +8,7 @@
 * 跟其他parachain互動，需要在本地測試
 
 [2:20]
+* parachain & relaychain
+
+有3個特性
+1. 
