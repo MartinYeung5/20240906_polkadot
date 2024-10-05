@@ -165,3 +165,4 @@ XCVM instruction
 [38:30]
 * example: QueryResopnse
 * 向對方report information, 之後可以獲得一個回覆
+
