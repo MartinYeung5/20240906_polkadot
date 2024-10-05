@@ -285,6 +285,13 @@ rustup component add rust-src --toolchain stable-x86_64-unknown-linux-gnu
 
 * zombienet --provider native spawn ./zombienet.toml
 有錯誤:
+![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241005_6.png?raw=true)
+
+* 注意: 如果看到以下紅色的錯誤，其實沒問題的，只是警告提示
+```
+(node:55968) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+```
 
 
 解決方式:
