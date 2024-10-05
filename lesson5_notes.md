@@ -21,4 +21,5 @@
 * L1, L2 OP, ZK Rollup, AppChain,
 
 polkadot協議: 有relaychain統一負責 (例如: polkadot)，有自己的節點可以來驗證區塊，
-還會驗證parachain所產生的block
+還會驗證parachain所產生的block。
+* 把安仕放到relaychain
