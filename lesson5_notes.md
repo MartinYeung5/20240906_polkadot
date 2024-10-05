@@ -106,3 +106,5 @@ pub enum Junctions {
 	X8(Arc<[Junction; 8]>),
 }
 ```
+
+* junction 也是一個enum
