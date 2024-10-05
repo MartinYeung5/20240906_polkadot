@@ -67,3 +67,7 @@ polkadot 提升
 * universal location: 類似根目錄
 
 [24:26]
+* location hierarchy
+1. relay
+2. parachain
+3. account or pallet or contracts
