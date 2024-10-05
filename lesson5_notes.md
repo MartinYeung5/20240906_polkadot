@@ -157,3 +157,4 @@ XCVM instruction
 
 [37:10]
 看PPT展示
+* example: WithdrawAsset
