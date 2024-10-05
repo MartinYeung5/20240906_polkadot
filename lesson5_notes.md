@@ -236,10 +236,10 @@ xcm/xcm-executor/src/lib.rs
 * 創建一個有relaychain + parachain環境
 
 [1:14:00]
-* zombinet.toml
+* zombienet.toml
 
 [1:!6:10]
-* zombinet --provider natice spawn ./zombinet.tome
+* zombienet --provider natice spawn ./zombinet.tome
 
 * lesson5:
 https://github.com/papermoonio/polkadot-sdk-course-code/tree/main/advance/lesson-5
