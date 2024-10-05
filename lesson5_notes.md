@@ -173,4 +173,4 @@ XCVM instruction
 1. 會從origins中get asset
 2. 將asset 通過"put asset"放到holding
 3. BuyExecution 可以獲得手續費 (需要與Exector互動,執行fetch)
-4. DepositAsset (需要與Exector互動,執行fetch)
+4. DepositAsset (需要與Exector互動,執行fetch), 去holding get asset
