@@ -20,4 +20,4 @@
 2. 其他解決方法
 * L1, L2 OP, ZK Rollup, AppChain,
 
-substrate: 有relaychain統一
+substrate: 有relaychain統一 (例如: polkadot)
