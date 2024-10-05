@@ -28,5 +28,5 @@ polkadot協議: 有relaychain統一負責 (例如: polkadot)，有自己的節�
 [5:25]
 涉及到大量業務就會放到parachain，可以根據自己業務進行擴展，最終區塊需要到relaychain上驗證
 
-
+把做抉擇的權利分散
 
