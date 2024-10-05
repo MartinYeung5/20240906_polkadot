@@ -262,6 +262,7 @@ Cannot compile the WASM runtime: the `wasm32-unknown-unknown` target is not inst
 
 * 解決:
 * rustup target add wasm32-unknown-unknown --toolchain stable-x86_64-unknown-linux-gnu
+![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241005_3.png?raw=true)
 
 
 
