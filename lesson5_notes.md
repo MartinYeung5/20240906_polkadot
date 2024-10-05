@@ -221,3 +221,6 @@ xcm/xcm-executor/src/lib.rs
 * 定義origins
 * cumulus/pallets/xcm/src/lib.rs
 * pub enum Origin
+
+[1:01:00]
+* cumulus/pallets/xcmp-queue/src/lib.rs
