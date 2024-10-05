@@ -176,3 +176,5 @@ XCVM instruction
 4. DepositAsset (需要與Exector互動,執行fetch), 去holding get asset
 5. 如果順利完成, 會put aaset 去 Beneficiary
 
+[43:20]
+2. Reserve asset transfers
