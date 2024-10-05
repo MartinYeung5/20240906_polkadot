@@ -64,4 +64,5 @@ polkadot 提升
 * Location
 * 每個location is struct, each location will have junction
 
+* universal location: 類似根目錄
 
