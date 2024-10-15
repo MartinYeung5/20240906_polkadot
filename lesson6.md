@@ -78,5 +78,9 @@ ink contract 中會有ink_env,
 * https://polkadot.js.org/apps
 * https://contracts-ui.substrate.io/
 
+[22:30]
+* git clone https://github.com/paritytech/substrate-contracts-node.git
+2. install cargo-contract
+* cargo install cargo-contract
 [27:40]
 如何寫ink! contract
