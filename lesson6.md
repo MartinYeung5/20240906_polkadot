@@ -59,3 +59,4 @@ STORAGE ink! support
 * cargo install cargo-contract
 [18:00]
 contract call substrate runtime
+[18:09]
