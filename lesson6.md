@@ -43,3 +43,8 @@ contract structure
 * Invokable function: #[ink(message)]
 * Event: #[ink(event)]
 
+[16:50]
+STORAGE ink! support
+* commmon types:
+* ink! types:
+
