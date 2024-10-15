@@ -69,3 +69,4 @@ https://use.ink/ink-vs-solidity
 ink contract 中會有ink_env, 
 會在ink_env中由env backend實現 env tree ?
 * envbackend 會有off chain / on chain
+* off chain > 會在std, 通常用於測試的功能 
