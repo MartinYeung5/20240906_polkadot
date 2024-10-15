@@ -52,4 +52,4 @@ STORAGE ink! support
 [17:45]
 * 環境安裝
 1. install substrate contracrt node
-* git clone
+* git clone https://github.com/
