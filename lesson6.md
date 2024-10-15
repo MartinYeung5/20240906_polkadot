@@ -74,3 +74,7 @@ ink contract 中會有ink_env,
 通過host function 去調用 wasm 中的pallet contracts
 
 [21:47]
+工具推薦
+* https://polkadot.js.org/apps
+* https://contracts-ui.substrate.io/
+
