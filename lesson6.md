@@ -11,3 +11,9 @@ why webAssembly?
 2. fast
 3. compact
 4. well support
+
+[3:10]
+why rust?
+1. build directly to Wasm
+2. repidly developing ecosystem
+3. ergonomic and easier to get right
