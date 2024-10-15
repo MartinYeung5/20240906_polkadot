@@ -62,3 +62,4 @@ contract call substrate runtime
 [18:09]
 https://use.ink/ink-vs-solidity
 
+* ink! rust, solidity, ask! assembly script 都可以encode to WebAssembly Bytecode
