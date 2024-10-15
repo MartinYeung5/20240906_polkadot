@@ -91,4 +91,4 @@ cargo contract new 20241015_ink_project
 [30:00]
 
 * rustup show
-建議用1.78 version
+建議用1.78.0 version
