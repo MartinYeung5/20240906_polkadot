@@ -82,5 +82,8 @@ ink contract 中會有ink_env,
 * git clone https://github.com/paritytech/substrate-contracts-node.git
 2. install cargo-contract
 * cargo install cargo-contract
+3. create new project
+cargo contract new 20241015_ink_project
+
 [27:40]
 如何寫ink! contract
