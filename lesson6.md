@@ -47,4 +47,4 @@ contract structure
 STORAGE ink! support
 * commmon types: bool, u[], i[], string, tuples, enum, struct
 * ink! types: common types, mapping, vex, enum(Rust), struct
-
+* Substrate types: AccountId, Balance, Hash
