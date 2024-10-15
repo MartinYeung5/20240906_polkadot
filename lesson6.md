@@ -57,3 +57,4 @@ STORAGE ink! support
 2. install cargo-contract
 * cargo install dylint-link
 * cargo install cargo-contract
+[18:00]
