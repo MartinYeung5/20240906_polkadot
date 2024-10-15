@@ -23,4 +23,4 @@ contract components
 * ink! vs solidity
 
 [8:47]
-call structure
+call substrate runtime
