@@ -28,3 +28,4 @@ contract components
 2. ink!
 * call_runtime
 * chain_extension
+在EVM外運算
