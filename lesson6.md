@@ -38,3 +38,5 @@ ink! 例子:
 ink! 合約架構跟Solidity差不多
 [16:00]
 contract structure
+* Storage: #[ink(storage)]
+* 
