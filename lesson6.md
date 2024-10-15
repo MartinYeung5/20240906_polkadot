@@ -71,3 +71,4 @@ ink contract 中會有ink_env,
 * envbackend 會有off chain / on chain
 * off chain > 會在std, 通常用於測試的功能 
 * on chain > 會在鏈上面進行 (ext)
+通過host function 去調用 wasm 中的pallet contracts
