@@ -42,3 +42,4 @@ contract structure
 * Contract instantiation: #[ink(contructor)]
 * Invokable function: #[ink(message)]
 * Event: #[ink(event)]
+
