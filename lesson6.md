@@ -40,3 +40,4 @@ ink! 合約架構跟Solidity差不多
 contract structure
 * Storage: #[ink(storage)]
 * Contract instantiation: #[ink(contructor)]
+* Invokable function
