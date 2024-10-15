@@ -31,3 +31,6 @@ contract components
 在EVM外運算
 [13:00]
 ink! 例子:
+* ink1合約內部想拿鏈上的randomness
+[15:11]
+* parachain 可以相互調用
