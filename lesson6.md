@@ -105,3 +105,4 @@ rustup default nightly-2023-03-18-x86_64-unknown-linux-gnu
 開始寫ink contract
 由於ink是在wasm內(所以要說明是nostd)
 
+
