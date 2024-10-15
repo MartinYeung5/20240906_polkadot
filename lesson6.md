@@ -78,3 +78,5 @@ ink contract 中會有ink_env,
 * https://polkadot.js.org/apps
 * https://contracts-ui.substrate.io/
 
+[27:40]
+如何寫ink! contract
