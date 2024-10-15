@@ -17,3 +17,6 @@ why rust?
 1. build directly to Wasm
 2. repidly developing ecosystem
 3. ergonomic and easier to get right
+
+[4:30]
+contract components
