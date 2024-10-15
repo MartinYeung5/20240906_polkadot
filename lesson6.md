@@ -55,4 +55,4 @@ STORAGE ink! support
 * git clone https://github.com/paritytech/substrate-contracts-node.git
 * git checkout v0.25.0
 2. install cargo-contract
-* 
+* cargo install dylint-link
