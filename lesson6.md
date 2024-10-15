@@ -56,3 +56,4 @@ STORAGE ink! support
 * git checkout v0.25.0
 2. install cargo-contract
 * cargo install dylint-link
+* cargo install cargo-contract
