@@ -10,3 +10,4 @@ why webAssembly?
 1. sandboxed
 2. fast
 3. compact
+4. well support
