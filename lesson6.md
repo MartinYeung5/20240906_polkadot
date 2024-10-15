@@ -87,3 +87,8 @@ cargo contract new 20241015_ink_project
 
 [27:40]
 如何寫ink! contract
+
+[30:00]
+
+* rustup show
+建議用1.78 version
