@@ -67,4 +67,4 @@ https://use.ink/ink-vs-solidity
 
 [20:20]
 ink contract 中會有ink_env, 
-會在ink_env實現 env tree ?
+會在ink_env中由env backend實現 env tree ?
