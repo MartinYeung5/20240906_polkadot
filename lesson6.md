@@ -36,3 +36,5 @@ ink! 例子:
 * parachain 可以相互調用
 [15:48]
 ink! 合約架構跟Solidity差不多
+[16:00]
+contract structure
