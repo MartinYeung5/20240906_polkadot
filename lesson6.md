@@ -20,3 +20,7 @@ why rust?
 
 [4:30]
 contract components
+* ink! vs solidity
+
+[8:47]
+call structure
