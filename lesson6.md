@@ -29,3 +29,5 @@ contract components
 * call_runtime
 * chain_extension
 在EVM外運算
+[13:00]
+ink! 例子:
