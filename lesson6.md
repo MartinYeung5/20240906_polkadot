@@ -66,3 +66,5 @@ https://use.ink/ink-vs-solidity
 通過API，與pallet-contracts 互動
 
 [20:20]
+ink contract 中會有ink_env, 
+會在ink_env實現 env tree ?
