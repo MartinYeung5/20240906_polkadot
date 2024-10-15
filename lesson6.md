@@ -34,3 +34,5 @@ ink! 例子:
 * ink1合約內部想拿鏈上的randomness
 [15:11]
 * parachain 可以相互調用
+[15:48]
+ink! 合約架構跟Solidity差不多
