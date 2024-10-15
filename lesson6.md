@@ -23,4 +23,8 @@ contract components
 * ink! vs solidity
 
 [8:47]
-call substrate runtime
+* call substrate runtime
+1. solidity > precompile
+2. ink!
+* call_runtime
+* chain_extension
