@@ -61,3 +61,4 @@ STORAGE ink! support
 contract call substrate runtime
 [18:09]
 https://use.ink/ink-vs-solidity
+
