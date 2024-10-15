@@ -102,3 +102,4 @@ rustup default nightly-2023-03-18-x86_64-unknown-linux-gnu
 * rustup show
 
 [32:15]
+開始寫ink contract
