@@ -45,6 +45,6 @@ contract structure
 
 [16:50]
 STORAGE ink! support
-* commmon types:
+* commmon types: bool, u[], i[], string, tuples, enum, struct
 * ink! types:
 
