@@ -145,7 +145,7 @@ transfer function
 cargo install contracts-node --locked
 
 
-notes:
+### notes:
 1. 當下版本
 * rustup show
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241016_0.png?raw=true)
