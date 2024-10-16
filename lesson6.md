@@ -150,7 +150,8 @@ cargo install contracts-node --locked
 
 
 ### notes:
-轉用rust stable版本
+0. 版本修正:
+* 轉用rust stable版本
 * rustup default stable
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241016_3.png?raw=true)
 
