@@ -213,8 +213,9 @@ The 'substrate-contracts-node' executable was not found. Install 'substrate-cont
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241016_6.png?raw=true)
 
 
+### testing
 * cargo install contracts-node --git https://github.com/MartinYeung5/substrate-contracts-node.git
-testing
+
 
 remove old version
 * rustup toolchain remove 1.76.0-x86_64-unknown-linux-gnu
