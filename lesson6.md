@@ -186,6 +186,9 @@ The 'substrate-contracts-node' executable was not found. Install 'substrate-cont
 * screencap:
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241016_1.png?raw=true)
 
+* cargo install cargo-contract --force
+
+
 * cargo install contracts-node --git https://github.com/MartinYeung5/substrate-contracts-node.git
 testing
 
