@@ -85,6 +85,7 @@ ink contract 中會有ink_env,
 3. create new project
 cargo contract new 20241015_ink_project
 
+
 [27:40]
 如何寫ink! contract
 
@@ -95,14 +96,81 @@ cargo contract new 20241015_ink_project
 建議用1.70.0 version
 * rustup toolchain add nightly-2023-03-18
 rustup target add wasm32-unknown-unknown --toolchain nightly-2023-03-18-x86_64-unknown-linux-gnu
+
 進行檢查
 * rustup show
 rustup default nightly-2023-03-18-x86_64-unknown-linux-gnu
+(因為以上version出問題)
+error:
+
+修改version:
+rustup default stable
+
 進行檢查
 * rustup show
+
+cargo contract new ink_2_project
 
 [32:15]
 開始寫ink contract
 由於ink是在wasm內(所以要說明是nostd)
 
+[37:45]
+通過設置可變引用或不可變引用來表示能否改變它在區塊鏈上的狀態
 
+[39:10]
+```
+$[ink(message)]
+        pub fn balance_of(&self, who: AccountId) -> Balance { 
+            self.balance.get(&who).unwrap_or_default()
+        }
+```
+如果none就會返回0
+
+[39:55]
+需要聲明result
+type Result<T> = core::result::Result<T, Error>
+當中的Error需要自行定義!
+
+[41:20]
+transfer function
+
+[44:25]
+定義event
+
+[45:44]
+* cargo contract build
+
+
+cargo install contracts-node --locked
+
+
+notes:
+當下版本
+* rustup show
+![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241016_0.png?raw=true)
+
+8. 進行項目 E2E test
+* export CONTRACTS_NODE="/root/substrate/20241015/substrate-contracts-node"
+* cargo test --features e2e-tests
+The 'substrate-contracts-node' executable was not found. Install 'substrate-contracts-node' on the PATH, or specify the `CONTRACTS_NODE` environment variable.
+
+* cargo install contracts-node --git https://github.com/paritytech/substrate-contracts-node.git
+  error[E0152]: duplicate lang item in crate `std` (which `memchr` depends on): `panic_impl`
+    |
+    = note: the lang item is first defined in crate `sp_io` (which `frame_support` depends on)
+    = note: first definition in `sp_io` loaded from /tmp/cargo-installFnwm0I/release/wbuild/contracts-parachain-runtime/target/wasm32-unknown-unknown/release/deps/libsp_io-c274a413a0a278be.rmeta
+    = note: second definition in `std` loaded from /tmp/cargo-installFnwm0I/release/wbuild/contracts-parachain-runtime/target/wasm32-unknown-unknown/release/deps/libstd-38fc9796a84a90f2.rmeta
+
+* cargo install contracts-node
+  error[E0152]: duplicate lang item in crate `std` (which `memchr` depends on): `panic_impl`
+    |
+    = note: the lang item is first defined in crate `sp_io` (which `frame_support` depends on)
+    = note: first definition in `sp_io` loaded from /tmp/cargo-installIBdi32/release/wbuild/contracts-parachain-runtime/target/wasm32-unknown-unknown/release/deps/libsp_io-c274a413a0a278be.rmeta
+    = note: second definition in `std` loaded from /tmp/cargo-installIBdi32/release/wbuild/contracts-parachain-runtime/target/wasm32-unknown-unknown/release/deps/libstd-38fc9796a84a90f2.rmeta
+
+* cargo install contracts-node --git https://github.com/MartinYeung5/substrate-contracts-node.git
+testing
+
+remove old version
+* rustup toolchain remove 1.76.0-x86_64-unknown-linux-gnu
