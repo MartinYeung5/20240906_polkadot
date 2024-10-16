@@ -153,6 +153,7 @@ notes:
 2. 進行項目 E2E test
 * export CONTRACTS_NODE="/root/substrate/20241015/substrate-contracts-node"
 * cargo test --features e2e-tests
+* 但有錯誤msg:
 The 'substrate-contracts-node' executable was not found. Install 'substrate-contracts-node' on the PATH, or specify the `CONTRACTS_NODE` environment variable.
 * screencap:
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241016_2.png?raw=true)
