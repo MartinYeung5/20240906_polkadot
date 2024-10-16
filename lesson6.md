@@ -3,6 +3,10 @@
 ### 影片
 * https://www.youtube.com/watch?v=RjdVXTYZYqk
 
+### 問題
+1. 影片中的字體太小，難以看到代碼
+2. 影片內容已經是幾個月前，有些操作已經用不了
+
 ### 重點
 [2:25]
 why webAssembly?
