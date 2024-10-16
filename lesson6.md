@@ -161,6 +161,10 @@ The 'substrate-contracts-node' executable was not found. Install 'substrate-cont
     = note: the lang item is first defined in crate `sp_io` (which `frame_support` depends on)
     = note: first definition in `sp_io` loaded from /tmp/cargo-installFnwm0I/release/wbuild/contracts-parachain-runtime/target/wasm32-unknown-unknown/release/deps/libsp_io-c274a413a0a278be.rmeta
     = note: second definition in `std` loaded from /tmp/cargo-installFnwm0I/release/wbuild/contracts-parachain-runtime/target/wasm32-unknown-unknown/release/deps/libstd-38fc9796a84a90f2.rmeta
+* screencap:
+![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241016_0.png?raw=true)
+
+
 
 * cargo install contracts-node
   error[E0152]: duplicate lang item in crate `std` (which `memchr` depends on): `panic_impl`
