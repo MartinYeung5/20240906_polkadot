@@ -146,11 +146,11 @@ cargo install contracts-node --locked
 
 
 notes:
-當下版本
+1. 當下版本
 * rustup show
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241016_0.png?raw=true)
 
-8. 進行項目 E2E test
+2. 進行項目 E2E test
 * export CONTRACTS_NODE="/root/substrate/20241015/substrate-contracts-node"
 * cargo test --features e2e-tests
 The 'substrate-contracts-node' executable was not found. Install 'substrate-contracts-node' on the PATH, or specify the `CONTRACTS_NODE` environment variable.
