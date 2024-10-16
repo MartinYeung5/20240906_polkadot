@@ -197,6 +197,12 @@ The 'substrate-contracts-node' executable was not found. Install 'substrate-cont
 * cargo build dylint-link
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241016_5.png?raw=true)
 
+* git clone https://github.com/paritytech/substrate-contracts-node.git
+* cd substrate-contracts-node
+* cargo build
+* 遇到錯誤訊息:
+![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241016_6.png?raw=true)
+
 
 * cargo install contracts-node --git https://github.com/MartinYeung5/substrate-contracts-node.git
 testing
