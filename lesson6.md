@@ -203,6 +203,10 @@ The 'substrate-contracts-node' executable was not found. Install 'substrate-cont
 * 遇到錯誤訊息:
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241016_6.png?raw=true)
 
+解決方法:
+* sudo apt-get install libxcb1-dev libxcb-shape0-dev libxcb-xfixes0-dev libxcb-render0-dev
+
+
 
 * cargo install contracts-node --git https://github.com/MartinYeung5/substrate-contracts-node.git
 testing
