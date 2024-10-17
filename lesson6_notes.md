@@ -162,7 +162,7 @@ transfer function
 0. 版本修正:
 * 轉用rust stable版本
 * rustup default stable
-![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241016_3.png?raw=true)
+![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20231016_3.png?raw=true)
 
 1. 當下版本
 * rustup show
@@ -174,7 +174,7 @@ transfer function
 * 但有錯誤msg:
 The 'substrate-contracts-node' executable was not found. Install 'substrate-contracts-node' on the PATH, or specify the `CONTRACTS_NODE` environment variable.
 * screencap:
-![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241016_2.png?raw=true)
+![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20231016_2.png?raw=true)
 
 * cargo install contracts-node --git https://github.com/paritytech/substrate-contracts-node.git
   error[E0152]: duplicate lang item in crate `std` (which `memchr` depends on): `panic_impl`
@@ -183,7 +183,7 @@ The 'substrate-contracts-node' executable was not found. Install 'substrate-cont
     = note: first definition in `sp_io` loaded from /tmp/cargo-installFnwm0I/release/wbuild/contracts-parachain-runtime/target/wasm32-unknown-unknown/release/deps/libsp_io-c274a413a0a278be.rmeta
     = note: second definition in `std` loaded from /tmp/cargo-installFnwm0I/release/wbuild/contracts-parachain-runtime/target/wasm32-unknown-unknown/release/deps/libstd-38fc9796a84a90f2.rmeta
 * screencap:
-![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241016_1.png?raw=true)
+![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20231016_1.png?raw=true)
 
 
 * cargo install contracts-node
@@ -193,24 +193,24 @@ The 'substrate-contracts-node' executable was not found. Install 'substrate-cont
     = note: first definition in `sp_io` loaded from /tmp/cargo-installIBdi32/release/wbuild/contracts-parachain-runtime/target/wasm32-unknown-unknown/release/deps/libsp_io-c274a413a0a278be.rmeta
     = note: second definition in `std` loaded from /tmp/cargo-installIBdi32/release/wbuild/contracts-parachain-runtime/target/wasm32-unknown-unknown/release/deps/libstd-38fc9796a84a90f2.rmeta
 * screencap:
-![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241016_1.png?raw=true)
+![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20231016_1.png?raw=true)
 
 
 * git clone https://github.com/paritytech/substrate-contracts-node.git
 * cd substrate-contracts-node
 * cargo build
 * 遇到錯誤訊息:
-![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241016_4.png?raw=true)
+![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20231016_4.png?raw=true)
 
 
 * cargo build dylint-link
-![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241016_5.png?raw=true)
+![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20231016_5.png?raw=true)
 
 * git clone https://github.com/paritytech/substrate-contracts-node.git
 * cd substrate-contracts-node
 * cargo build
 * 遇到錯誤訊息:
-![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241016_6.png?raw=true)
+![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20231016_6.png?raw=true)
 
 解決方法:
 * sudo apt-get install libxcb1-dev libxcb-shape0-dev libxcb-xfixes0-dev libxcb-render0-dev
@@ -219,7 +219,7 @@ The 'substrate-contracts-node' executable was not found. Install 'substrate-cont
 * cd substrate-contracts-node
 * cargo build
 * 遇到錯誤訊息:
-![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241016_7.png?raw=true)
+![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20231016_7.png?raw=true)
 
 
 ### testing
