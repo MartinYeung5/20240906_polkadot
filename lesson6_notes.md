@@ -146,9 +146,6 @@ transfer function
 * cargo contract build
 
 
-cargo install contracts-node --locked
-
-
 ### notes:
 0. 版本修正:
 * 轉用rust stable版本
