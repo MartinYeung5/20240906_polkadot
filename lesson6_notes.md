@@ -33,13 +33,21 @@ contract components
 * call_runtime
 * chain_extension
 在EVM外運算
+
+
 [13:00]
 ink! 例子:
 * ink1合約內部想拿鏈上的randomness
+
+
 [15:11]
 * parachain 可以相互調用
+
+
 [15:48]
 ink! 合約架構跟Solidity差不多
+
+
 [16:00]
 contract structure
 * Storage: #[ink(storage)]
@@ -61,8 +69,12 @@ STORAGE ink! support
 2. install cargo-contract
 * cargo install dylint-link
 * cargo install cargo-contract
+
+
 [18:00]
 contract call substrate runtime
+
+
 [18:09]
 https://use.ink/ink-vs-solidity
 
