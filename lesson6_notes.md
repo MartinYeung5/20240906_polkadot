@@ -172,26 +172,32 @@ transfer function
 * export CONTRACTS_NODE="/root/substrate/20241015/substrate-contracts-node"
 * cargo test --features e2e-tests
 * 但有錯誤msg:
+```
 The 'substrate-contracts-node' executable was not found. Install 'substrate-contracts-node' on the PATH, or specify the `CONTRACTS_NODE` environment variable.
+```
 * screencap:
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20231016_2.png?raw=true)
 
 * cargo install contracts-node --git https://github.com/paritytech/substrate-contracts-node.git
-  error[E0152]: duplicate lang item in crate `std` (which `memchr` depends on): `panic_impl`
+```
+error[E0152]: duplicate lang item in crate `std` (which `memchr` depends on): `panic_impl`
     |
     = note: the lang item is first defined in crate `sp_io` (which `frame_support` depends on)
     = note: first definition in `sp_io` loaded from /tmp/cargo-installFnwm0I/release/wbuild/contracts-parachain-runtime/target/wasm32-unknown-unknown/release/deps/libsp_io-c274a413a0a278be.rmeta
     = note: second definition in `std` loaded from /tmp/cargo-installFnwm0I/release/wbuild/contracts-parachain-runtime/target/wasm32-unknown-unknown/release/deps/libstd-38fc9796a84a90f2.rmeta
+```
 * screencap:
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20231016_1.png?raw=true)
 
 
 * cargo install contracts-node
+```
   error[E0152]: duplicate lang item in crate `std` (which `memchr` depends on): `panic_impl`
     |
     = note: the lang item is first defined in crate `sp_io` (which `frame_support` depends on)
     = note: first definition in `sp_io` loaded from /tmp/cargo-installIBdi32/release/wbuild/contracts-parachain-runtime/target/wasm32-unknown-unknown/release/deps/libsp_io-c274a413a0a278be.rmeta
     = note: second definition in `std` loaded from /tmp/cargo-installIBdi32/release/wbuild/contracts-parachain-runtime/target/wasm32-unknown-unknown/release/deps/libstd-38fc9796a84a90f2.rmeta
+```
 * screencap:
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20231016_1.png?raw=true)
 
