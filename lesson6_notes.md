@@ -197,8 +197,6 @@ The 'substrate-contracts-node' executable was not found. Install 'substrate-cont
 
 
 * git clone https://github.com/paritytech/substrate-contracts-node.git
-* cd substrate-contracts-node
-* cargo build
 * 遇到錯誤訊息:
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20231016_4.png?raw=true)
 
@@ -207,8 +205,6 @@ The 'substrate-contracts-node' executable was not found. Install 'substrate-cont
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20231016_5.png?raw=true)
 
 * git clone https://github.com/paritytech/substrate-contracts-node.git
-* cd substrate-contracts-node
-* cargo build
 * 遇到錯誤訊息:
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20231016_6.png?raw=true)
 
@@ -216,11 +212,10 @@ The 'substrate-contracts-node' executable was not found. Install 'substrate-cont
 * sudo apt-get install libxcb1-dev libxcb-shape0-dev libxcb-xfixes0-dev libxcb-render0-dev
 
 * git clone https://github.com/paritytech/substrate-contracts-node.git
-* cd substrate-contracts-node
-* cargo build
 * 遇到錯誤訊息:
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20231016_7.png?raw=true)
 
+* 重新
 
 ### testing
 * cargo install contracts-node --git https://github.com/MartinYeung5/substrate-contracts-node.git
