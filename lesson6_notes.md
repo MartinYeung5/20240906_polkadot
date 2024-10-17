@@ -212,10 +212,10 @@ The 'substrate-contracts-node' executable was not found. Install 'substrate-cont
 * sudo apt-get install libxcb1-dev libxcb-shape0-dev libxcb-xfixes0-dev libxcb-render0-dev
 
 * git clone https://github.com/paritytech/substrate-contracts-node.git
-* 遇到錯誤訊息:
+* cargo build --release
+* 成功
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20231016_7.png?raw=true)
 
-* 重新
 
 ### testing
 * cargo install contracts-node --git https://github.com/MartinYeung5/substrate-contracts-node.git
