@@ -207,7 +207,7 @@ The 'substrate-contracts-node' executable was not found. Install 'substrate-cont
 * cd substrate-contracts-node
 * cargo build
 * 遇到錯誤訊息:
-![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241016_6.png?raw=true)
+![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20241016_7.png?raw=true)
 
 
 ### testing
