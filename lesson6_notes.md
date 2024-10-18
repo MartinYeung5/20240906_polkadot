@@ -227,5 +227,5 @@ error[E0152]: duplicate lang item in crate `std` (which `memchr` depends on): `p
 * cargo install contracts-node --git https://github.com/MartinYeung5/substrate-contracts-node.git
 
 
-remove old version
+### remove old rust version
 * rustup toolchain remove 1.76.0-x86_64-unknown-linux-gnu
