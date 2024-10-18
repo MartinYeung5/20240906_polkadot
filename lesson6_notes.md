@@ -3,9 +3,8 @@
 ### 影片
 * https://www.youtube.com/watch?v=RjdVXTYZYqk
 
-### 問題
-1. 影片中的字體太小，難以看到代碼
-2. 影片內容已經是幾個月前，有些操作已經用不了，代碼部分可以參考官方版本
+### 注意
+1. 影片內有些操作/代碼需要更新，代碼部分可以參考官方版本
 * https://github.com/use-ink/ink-examples/tree/main/erc20
 
 ### 安裝設置 (針對WSL-ubuntu):
