@@ -7,7 +7,7 @@
 1. 影片內有些操作/代碼需要更新，代碼部分可以參考官方版本
 * https://github.com/use-ink/ink-examples/tree/main/erc20
 
-### 安裝設置 (針對WSL-ubuntu):
+### 安裝設置 (針對WSL-Ubuntu 24.04.1 LTS):
 0. 版本修正:
 * 轉用rust stable版本
 * rustup default stable
