@@ -7,15 +7,13 @@
 1. 影片中的字體太小，難以看到代碼
 2. 影片內容已經是幾個月前，有些操作已經用不了
 
-
-
-### notes:
+### 安裝設置:
 0. 版本修正:
 * 轉用rust stable版本
 * rustup default stable
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20231016_3.png?raw=true)
 
-1. 當下版本
+1. 有需要可以先檢查當下版本，如果是1.81.0之前就需要更新
 * rustup show
 ![alt text](https://github.com/MartinYeung5/20240906_polkadot/blob/main/Image/20231016_0.png?raw=true)
 
