@@ -70,7 +70,10 @@ update runtime/src/lib.rs
 in lesson 3 folder, 
 (必須要執行狀態重置)
 * rm -rf /tmp/blockchain
-(起動blockchain)
+(起動blockchain)\
+https://github.com/paritytech/polkadot-sdk-solochain-template?tab=readme-ov-file
+* gh repo clone paritytech/polkadot-sdk-solochain-template
+* cargo build --package solochain-template-node --release
 * ./solochain-template-node --dev --base -path /tmp/blockchain
 
 [23:10]
