@@ -74,6 +74,9 @@ in lesson 3 folder,
 https://github.com/paritytech/polkadot-sdk-solochain-template?tab=readme-ov-file
 * gh repo clone paritytech/polkadot-sdk-solochain-template
 * cargo build --package solochain-template-node --release
+* cd target/release
+* ./solochain-template-node --dev --base-path /tmp/blockchain
+
 * ./solochain-template-node --dev --base -path /tmp/blockchain
 
 [23:10]
