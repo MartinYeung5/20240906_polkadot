@@ -77,6 +77,7 @@ https://github.com/paritytech/polkadot-sdk-solochain-template?tab=readme-ov-file
 * cd target/release
 * ./solochain-template-node --dev --base-path /tmp/blockchain
 
+(以下是錯的)
 * ./solochain-template-node --dev --base -path /tmp/blockchain
 
 [23:10]
