@@ -71,7 +71,7 @@ in lesson 3 folder,
 (必須要執行狀態重置)
 * rm -rf /tmp/blockchain
 (起動blockchain)\
-* in same folder
+* in same folder (lession4)
 * cd target/release
 * ./solochain-template-node --dev --base-path /tmp/blockchain
 
