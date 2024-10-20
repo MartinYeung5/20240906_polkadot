@@ -1,6 +1,7 @@
 # substrat notes (筆記)
 
 
+
 # 20240906
 ## task1 test
 20240906 完成
