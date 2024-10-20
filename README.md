@@ -1,5 +1,5 @@
 # substrat notes (筆記)
-
+https://github.com/MartinYeung5/20240906_polkadot
 
 
 # 20240906
